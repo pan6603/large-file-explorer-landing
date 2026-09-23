@@ -1,7 +1,12 @@
+import Header from "@/components/layout/header/Header";
 
 
 export default function Home() {
   return (
-    <>Hello, Next.js!</>
+    <>
+      <Header />
+
+  
+    </>
   );
 }

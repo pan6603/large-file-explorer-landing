@@ -85,3 +85,39 @@ export const AppPreviewCardDescription = styled.p`
     text-align: left;
     color: #414753;
 `
+
+
+export const BenefitCardContainer = styled.div`
+    max-width: 280px;
+    width: 100%;
+    height: 216px;
+    padding: 24px;
+    background: #FAF8FF;
+    border: #C1C6D5;
+    border-radius: 12px;
+`
+
+
+export const BenefitCardTitle = styled.h3`
+    font-family: "Inter", sans-serif;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 0;
+
+    text-align: left;
+
+    color: #131b2e;
+`
+
+
+export const BenefitCardDescription = styled.p`
+    font-family: "Inter", sans-serif;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 19.5px;
+    letter-spacing: 0;
+    text-align: left;
+
+    color: #414753;
+`

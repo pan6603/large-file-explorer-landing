@@ -1,0 +1,83 @@
+import styled from "styled-components";
+
+
+
+export const HomeBenefitsSection = styled.section`
+    width: 100%;
+    height: auto;
+    background: #FFFFFF;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+`
+
+
+export const HomeBenefitsContainer = styled.div`
+    max-width: 1280px;
+    width: 100%;
+    height: 574px;  
+    display: flex;
+    align-items: center;
+    justify-content: center;
+`
+
+export const HomeBenefitsWrapper = styled.div`
+    max-width: 1240px;
+    width: 100%;
+    height: 382px;
+    padding-left: 24px;
+    padding-right: 24px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+`
+
+export const HomeBenefitsHeader = styled.div`
+    max-width: 672px;
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+`
+
+export const HomeBenefitsGrid = styled.div`
+    width: 100%;
+    height: 216px;
+    display: flex;
+    gap: 24px;
+    align-items: center;
+`
+
+export const HomeBenefitsEyebrow = styled.span`
+    font-family: "Inter", sans-serif;
+    font-size: 11px;
+    font-weight: 700;
+    line-height: 16px;
+    letter-spacing: 1.1px;
+    text-align: center;
+    color: #004E9F;
+`
+
+export const HomeBenefitsTitle = styled.h2`
+    font-family: "Inter", sans-serif;
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 38px;
+    letter-spacing: -0.6px;
+    text-align: center;
+    color: #131b2e;
+`
+
+
+export const HomeBenefitsDescription = styled.p`
+    font-family: "Inter", sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+    letter-spacing: 0;
+    text-align: center;
+    color: #414753;
+`

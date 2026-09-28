@@ -54,3 +54,34 @@ export const FeatureDescription = styled.p`
     text-align: left;
     color: #414753;
 `
+
+
+export const AppPreviewCardHeader = styled.div`
+    width: 100%;
+    height: 16px;
+    display: flex;
+    gap: 8px;
+    align-items: center;
+`
+
+export const AppPreviewCardTitle = styled.span`
+    font-family: "Inter", sans-serif;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 16px;
+    letter-spacing: 0;
+    text-align: left;
+    color: #004e9f;
+`
+
+
+export const AppPreviewCardDescription = styled.p`
+    font-family: "Inter", sans-serif;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 16px;
+    letter-spacing: 0;
+
+    text-align: left;
+    color: #414753;
+`

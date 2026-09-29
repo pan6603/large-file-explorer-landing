@@ -11,16 +11,21 @@ export const GithubIconContainer = styled.div`
 `;
 
 
+type GithubIconProps = {
+    width?: number;
+    height?: number;
+}
 
-export default function GithubIcon() {
+
+export default function GithubIcon({ width = 16, height = 16 }: GithubIconProps) {
     return (
         <>
             <GithubIconContainer>
                 <Image 
                     src="/icons/github-icon.svg"
                     alt="github-icon"
-                    width={16}
-                    height={16}
+                    width={width}
+                    height={height}
                 />
             </GithubIconContainer>
         </>

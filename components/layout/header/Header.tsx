@@ -41,7 +41,7 @@ export default function Header() {
                         </GitHubButton>
 
                         <DownloadButton href="">
-                            <WindowsIcon />
+                            <WindowsIcon width={16}height={16} />
                             <DownloadButtonText>Download for Windows</DownloadButtonText>
                         </DownloadButton>
                     </HeaderActions>

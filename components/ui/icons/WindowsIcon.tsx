@@ -11,16 +11,21 @@ export const WindowsIconContainer = styled.div`
 `;
 
 
+type WindowsIconProps = {
+    width?: number;
+    height?: number;
+}
 
-export default function WindowsIcon() {
+
+export default function WindowsIcon({ width = 20, height = 20 }: WindowsIconProps) {
     return (
         <>
             <WindowsIconContainer>
                 <Image 
                     src="/icons/windows-icon.svg"
                     alt="windows-icon"
-                    width={16}
-                    height={16}
+                    width={width}
+                    height={height}
                 />
             </WindowsIconContainer>
         </>

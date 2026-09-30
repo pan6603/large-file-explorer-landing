@@ -1,3 +1,5 @@
+"use client";
+
 import {
     HomeCtaSection,
     HomeCtaContainer,
@@ -13,10 +15,21 @@ import {
 import DownloadBoxIcon from "@/components/ui/icons/DownloadBoxIcon"
 import WindowsIcon from "@/components/ui/icons/WindowsIcon"
 
+const handleCtaClick = (
+    event: React.MouseEvent<HTMLAnchorElement>
+) => {
+    event.preventDefault();
+
+    document.getElementById("documentation")?.scrollIntoView({
+        behavior: "smooth",
+        block: "start",
+    });
+};
+
 export default function HomeCta() {
     return (
         <>
-            <HomeCtaSection>
+            <HomeCtaSection id="documentation" onClick={handleCtaClick}>
                 <HomeCtaContainer>
                     <HomeCtaWrapper>
                         <HomeCtaContent>
@@ -27,7 +40,7 @@ export default function HomeCta() {
                                 and open-source desktop utility.
                             </HomeCTADescription>
                             <HomeCTAButtons>
-                                <HomeCTADownloadButton href="">
+                                <HomeCTADownloadButton href="https://github.com/pan6603/large-file-explorer-downloads/releases/download/v1.0.0/large-file-explorer-amd64-installer.exe">
                                     <WindowsIcon />
                                     <HomeCTADownloadButtonText>Download for Windows</HomeCTADownloadButtonText>
                                 </HomeCTADownloadButton>

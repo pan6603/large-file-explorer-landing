@@ -1,3 +1,5 @@
+"use client";
+
 import {
     HomeFeaturesSection,
     HomeHeroContainer,
@@ -55,9 +57,20 @@ const FEATURES = [
     },
 ] as const;
 
+const handleFeaturesClick = (
+    event: React.MouseEvent<HTMLAnchorElement>
+) => {
+    event.preventDefault();
+
+    document.getElementById("features")?.scrollIntoView({
+        behavior: "smooth",
+        block: "start",
+    });
+};
+
 export default function HomeFeatures() {
     return (
-        <HomeFeaturesSection>
+        <HomeFeaturesSection id="features" onClick={handleFeaturesClick}>
             <HomeHeroContainer>
                 <HomeFeaturesContent>
                     <HomeFeaturesHeader>

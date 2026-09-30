@@ -1,3 +1,5 @@
+"use client";
+
 import {
   HomeBenefitsSection,
   HomeBenefitsContainer,
@@ -66,9 +68,20 @@ const benefits = [
   },
 ];
 
+const handleBenefitsClick = (
+    event: React.MouseEvent<HTMLAnchorElement>
+) => {
+    event.preventDefault();
+
+    document.getElementById("performance")?.scrollIntoView({
+        behavior: "smooth",
+        block: "start",
+    });
+};
+
 export default function HomeBenefits() {
   return (
-    <HomeBenefitsSection>
+    <HomeBenefitsSection id="performance" onClick={handleBenefitsClick}>
       <HomeBenefitsContainer>
         <HomeBenefitsWrapper>
           <HomeBenefitsHeader>

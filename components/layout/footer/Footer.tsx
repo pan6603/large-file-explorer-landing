@@ -9,7 +9,7 @@ import {
     FooterLinks,
     FooterLink,
     FooterPlatform
-} from "@/components/layout/footer/footer.styles"
+} from "@/components/layout/footer/Footer.styles"
 
 
 

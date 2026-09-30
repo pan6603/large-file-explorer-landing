@@ -28,9 +28,26 @@ export default function Footer() {
                             </FooterBrandDescription>
                         </FooterBrand>
                         <FooterLinks>
-                            <FooterLink href="...">v1.0.0 Release Notes</FooterLink>
-                            <FooterLink href="...">GitHub Repository</FooterLink>
-                            <FooterLink href="...">Bug Tracker</FooterLink>
+                            <FooterLink 
+                                href="https://github.com/pan6603/large-file-explorer-downloads/releases/tag/v1.0.0"
+                                target="_blank"
+                                >
+                                    v1.0.0 Release Notes
+                            </FooterLink>
+
+                            <FooterLink
+                                href="https://github.com/pan6603/large-file-explorer-downloads"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                            >
+                                GitHub Repository
+                            </FooterLink>
+                            <FooterLink 
+                                href="https://github.com/pan6603/large-file-explorer-downloads/issues"
+                                target="_blank"
+                            >
+                                    Bug Tracker
+                            </FooterLink>
                             <FooterPlatform>Windows 10 / 11 (64-bit)</FooterPlatform>
                         </FooterLinks>
                     </FooterContent>

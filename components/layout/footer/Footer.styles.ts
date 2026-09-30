@@ -86,7 +86,7 @@ export const FooterLink = styled(Link)`
     color: #414753;
 `
 
-export const FooterPlatform = styled.p`
+export const FooterPlatform = styled.span`
     font-family: "Inter", sans-serif;
     font-size: 12px;
     font-weight: 400;

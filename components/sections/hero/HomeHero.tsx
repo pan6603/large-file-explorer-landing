@@ -17,9 +17,8 @@ import {
     ReleaseMetaText,
     AppPreview
 } from "@/components/sections/hero/hero.styles";
-import { PrimaryButtonStyle, SecondaryButtonStyle } from "@/components/ui/buttons/button.styles";
+import { PrimaryButtonStyle } from "@/components/ui/buttons/button.styles";
 import WindowsIcon from "@/components/ui/icons/WindowsIcon";
-import GithubIcon from "@/components/ui/icons/GithubIcon";
 import DownloadIcon from "@/components/ui/icons/DownloadIcon";
 
 export default function HomeHero() {
@@ -55,10 +54,7 @@ export default function HomeHero() {
                                 <DownloadIcon />
                             </PrimaryButtonStyle>
                             
-                            <SecondaryButtonStyle>
-                                <GithubIcon />
-                                View on GitHub
-                            </SecondaryButtonStyle>
+                      
                         </HomeHeroActions>
 
                         <ReleaseMeta>

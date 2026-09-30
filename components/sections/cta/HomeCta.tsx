@@ -9,12 +9,9 @@ import {
     HomeCTAMeta,
     HomeCTADownloadButton,
     HomeCTADownloadButtonText,
-    HomeCTASourceRepository,
-    SourceRepositoryText
 } from "@/components/sections/cta/cta.styles"
 import DownloadBoxIcon from "@/components/ui/icons/DownloadBoxIcon"
 import WindowsIcon from "@/components/ui/icons/WindowsIcon"
-import GithubIcon from "@/components/ui/icons/GithubIcon";
 
 export default function HomeCta() {
     return (
@@ -34,10 +31,6 @@ export default function HomeCta() {
                                     <WindowsIcon />
                                     <HomeCTADownloadButtonText>Download for Windows</HomeCTADownloadButtonText>
                                 </HomeCTADownloadButton>
-                                <HomeCTASourceRepository href="">
-                                    <GithubIcon />
-                                    <SourceRepositoryText>Source Repository</SourceRepositoryText>
-                                </HomeCTASourceRepository>
 
                             </HomeCTAButtons>
                             <HomeCTAMeta>v1.0.0 · Windows 64-bit · Downloaded via GitHub Releases · 100% Free & Open Source</HomeCTAMeta>

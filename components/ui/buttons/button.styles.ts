@@ -1,6 +1,12 @@
 import styled from "styled-components";
+import Link from "next/link";
 
-export const BaseButton = styled.button`
+
+export const PrimaryButtonStyle = styled(Link)`
+    color: #ffffff;
+    background-color: #0066CC;
+    border: none;
+
     display: inline-flex;
     align-items: center;
     justify-content: center;
@@ -21,16 +27,3 @@ export const BaseButton = styled.button`
     justify-content: space-between;
 `;
 
-export const PrimaryButtonStyle = styled(BaseButton)`
-    color: #ffffff;
-    background-color: #0066CC;
-    border: none;
-
-`;
-
-export const SecondaryButtonStyle = styled(BaseButton)`
-    color: #131B2E;
-    background-color: #ffffff;
-    border: 1px solid #C1C6D5;
-  
-`;

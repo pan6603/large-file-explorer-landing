@@ -28,19 +28,19 @@ export default function Header() {
                     </HeaderLogo>
 
                     <NavContainer>
-                        <NavItem href="">Features</NavItem>
-                        <NavItem href="">Screenshots</NavItem>
-                        <NavItem href="">Performance</NavItem>
-                        <NavItem href="">Documentation</NavItem>
+                        <NavItem href="#features">Features</NavItem>
+                        <NavItem href="#screenshots">Screenshots</NavItem>
+                        <NavItem href="#performance">Performance</NavItem>
+                        <NavItem href="#documentation">Documentation</NavItem>
                     </NavContainer>
 
                     <HeaderActions>
-                        <GitHubButton href="">
+                        <GitHubButton href="https://github.com/pan6603/large-file-explorer-downloads/releases/tag/v1.0.0">
                             <GithubIcon />
                             <GitHubButtonText>GitHub</GitHubButtonText>
                         </GitHubButton>
 
-                        <DownloadButton href="">
+                        <DownloadButton href="https://github.com/pan6603/large-file-explorer-downloads/releases/download/v1.0.0/large-file-explorer-amd64-installer.exe">
                             <WindowsIcon width={16}height={16} />
                             <DownloadButtonText>Download for Windows</DownloadButtonText>
                         </DownloadButton>

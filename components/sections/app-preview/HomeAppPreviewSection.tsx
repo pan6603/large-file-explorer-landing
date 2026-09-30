@@ -80,11 +80,22 @@ const previewCards = [
   },
 ];
 
+const handleScreenshotsClick = (
+    event: React.MouseEvent<HTMLAnchorElement>
+) => {
+    event.preventDefault();
+
+    document.getElementById("screenshots")?.scrollIntoView({
+        behavior: "smooth",
+        block: "start",
+    });
+};
+
 export default function HomeAppPreviewSection() {
   const [activeTab, setActiveTab] = useState<PreviewTabType>("storage");
 
   return (
-    <HomeAppPreviewContainer>
+    <HomeAppPreviewContainer id="screenshots" onClick={handleScreenshotsClick}>
       <HomeAppPreviewWrapper>
         <HomeAppPreviewContent>
           <HomeAppPreviewHeader>

@@ -4,6 +4,7 @@ import HomeFeatures from "@/components/sections/features/HomeFeatures";
 import HomeAppPreviewSection from "@/components/sections/app-preview/HomeAppPreviewSection"
 import HomeBenefits from "@/components/sections/benefits/HomeBenefits"
 import HomeCta from "@/components/sections/cta/HomeCta"
+import Footer from "@/components/layout/footer/Footer"
 
 export default function Home() {
   return (
@@ -14,6 +15,7 @@ export default function Home() {
       <HomeAppPreviewSection />
       <HomeBenefits />
       <HomeCta />
+      <Footer />
     </>
   );
 }

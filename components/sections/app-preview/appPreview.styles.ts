@@ -87,16 +87,17 @@ export const HomeAppPreviewTabs = styled.div`
     border-radius: 12px;
 `
 
-export const HomeAppPreviewTab = styled.div`
-
-`
-
 
 
 export const HomeAppPreviewMain = styled.div`
     width: fit-content;
     height: 837px;
     border-radius: 12px;
+
+    &:focus-visible {
+        outline: 2px solid #004e9f;
+        outline-offset: 4px;
+    }
 `
 
 export const HomeAppPreviewGrid = styled.div`

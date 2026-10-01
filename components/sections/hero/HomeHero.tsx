@@ -32,7 +32,7 @@ export default function HomeHero() {
                             <StatusIndicator />
                             <ReleaseBadgeText>v1.0.0 Released</ReleaseBadgeText>
                             <Divider>•</Divider>
-                            <PlatformText>Native Windows 64-bit utility</PlatformText>
+                            <PlatformText>Native Windows Desktop App</PlatformText>
                         </ReleaseBadge>
 
                         <HomeHeroTitleWrapper>
@@ -43,8 +43,8 @@ export default function HomeHero() {
                         </HomeHeroTitleWrapper>
 
                         <HomeHeroDescription>
-                            Large File Explorer helps you quickly find large files, duplicate files, and understand what's <br />
-                            using your Windows storage with zero system bloat.
+                            Large File Explorer is a native Windows desktop app that helps you quickly find large files, <br />
+                            duplicate files, and understand what's using your storage.
                         </HomeHeroDescription>
 
                         <HomeHeroActions>

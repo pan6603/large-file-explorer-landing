@@ -1,6 +1,6 @@
 import {
     LogoIconContainer
-} from "@/components/layout/header/header.styles";
+} from "@/components/layout/header/Header.styles";
 
 
 

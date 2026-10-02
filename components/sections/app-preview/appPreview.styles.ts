@@ -16,6 +16,11 @@ export const HomeAppPreviewWrapper = styled.div`
     padding: 96px 20px;
     margin: 0 auto;
 
+    @media (min-width: 768px) and (max-width: 1024px) {
+        max-width: 1024px;
+        height: auto;
+        padding: 72px 32px;
+    }
 `
 
 export const HomeAppPreviewContent = styled.div`
@@ -27,6 +32,15 @@ export const HomeAppPreviewContent = styled.div`
     flex-direction: column;
     align-items: center;
     justify-content: space-between;
+
+    @media (min-width: 768px) and (max-width: 1024px) {
+        max-width: 960px;
+        height: auto;
+        padding: 0;
+
+        gap: 32px;
+        justify-content: flex-start;
+    }
 `
 
 export const HomeAppPreviewHeader = styled.div`
@@ -35,12 +49,25 @@ export const HomeAppPreviewHeader = styled.div`
     display: flex;
     align-items: flex-end;
     justify-content: space-between;
+
+    @media (min-width: 768px) and (max-width: 1024px) {
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-start;
+        gap: 24px;
+    }
 `;
 
 export const HomeAppPreviewIntro = styled.div`
     max-width: 548px;
     width: 100%;
     height: auto;
+
+    @media (min-width: 768px) and (max-width: 1024px) {
+        max-width: 520px;
+        text-align: center;
+        margin: 0 auto;
+    }
 `
 
 export const HomeAppPreviewEyebrow = styled.span`
@@ -52,6 +79,13 @@ export const HomeAppPreviewEyebrow = styled.span`
     text-align: left;
 
     color: #004e9f;
+
+    @media (min-width: 768px) and (max-width: 1024px) {
+        font-size: 10px;
+        line-height: 14px;
+        letter-spacing: 1px;
+        text-align: center;
+    }
 `
 
 export const HomeAppPreviewTitle = styled.h2`
@@ -63,6 +97,13 @@ export const HomeAppPreviewTitle = styled.h2`
     text-align: left;
 
     color: #131b2e;
+
+    @media (min-width: 768px) and (max-width: 1024px) {
+        font-size: 26px;
+        line-height: 32px;
+        letter-spacing: -0.52px;
+        text-align: center;
+    }
 `
 
 export const HomeAppPreviewDescription = styled.p`
@@ -74,6 +115,13 @@ export const HomeAppPreviewDescription = styled.p`
     text-align: left;
 
     color: #414753;
+
+    @media (min-width: 768px) and (max-width: 1024px) {
+        font-size: 12px;
+        line-height: 16px;
+        text-align: center;
+    }
+
 `
 
 export const HomeAppPreviewTabs = styled.div`
@@ -85,6 +133,12 @@ export const HomeAppPreviewTabs = styled.div`
     justify-content: space-between;
     background: #E2E7FF;
     border-radius: 12px;
+
+    @media (min-width: 768px) and (max-width: 1024px) {
+        height: 38px;
+        padding: 3px;
+        border-radius: 10px;
+    }
 `
 
 
@@ -97,6 +151,19 @@ export const HomeAppPreviewMain = styled.div`
     &:focus-visible {
         outline: 2px solid #004e9f;
         outline-offset: 4px;
+    }
+
+    @media (min-width: 768px) and (max-width: 1024px) {
+        width: 100%;
+        height: auto;
+        border-radius: 10px;
+        overflow: hidden;
+
+        img {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
     }
 `
 

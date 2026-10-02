@@ -101,10 +101,18 @@ export const AppPreviewCardTitle = styled.span`
     letter-spacing: 0;
     text-align: left;
     color: #004e9f;
+
+    @media (min-width: 768px) and (max-width: 1024px) {
+        font-size: 11px;
+        line-height: 16px;
+    }
 `
 
 
 export const AppPreviewCardDescription = styled.p`
+    width: 100%;
+    height: auto;
+
     font-family: "Inter", sans-serif;
     font-weight: 400;
     font-size: 12px;
@@ -113,7 +121,13 @@ export const AppPreviewCardDescription = styled.p`
 
     text-align: left;
     color: #414753;
-`
+
+    @media (min-width: 768px) and (max-width: 1024px) {
+        width: 100%;
+        font-size: 9px;
+        line-height: 14px;
+    }
+`;
 
 
 export const BenefitCardContainer = styled.div`

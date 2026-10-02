@@ -11,6 +11,22 @@ export const FeatureIconContainer = styled.div`
     align-items: center;
     justify-content: center;
     border-radius: 8px;
+
+    img {
+        width: 19px;
+        height: 19px;
+    }
+
+    @media (min-width: 768px) and (max-width: 1024px) {
+        width: 40px;
+        height: 40px;
+        border-radius: 7px;
+
+        img {
+            width: 16px;
+            height: 16px;
+        }
+    }
 `;
 
 

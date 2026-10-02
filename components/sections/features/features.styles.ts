@@ -15,16 +15,30 @@ export const HomeHeroContainer = styled.div`
     display: flex;
     align-items: center;
     justify-content: center;
+
+
+    @media (min-width: 768px) and (max-width: 1024px) {
+        height: auto;
+        min-height: 900px;
+        padding: 64px 0;
+    }
 `;
 
 export const HomeFeaturesContent = styled.div`
     max-width: 1240px;
-    width: 100%;
+    width: calc(100% - 64px);
     height: 650px;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: space-between;
+
+    @media (min-width: 768px) and (max-width: 1024px) {
+        max-width: 896px;
+        width: calc(100% - 64px);
+        height: 780px;
+    }
+
 `;
 
 
@@ -50,6 +64,12 @@ export const HomeFeaturesEyebrow = styled.div`
     text-align: center;
 
     color: #004e9f;
+
+    @media (min-width: 768px) and (max-width: 1024px) {
+        font-size: 11px;
+        line-height: 16px;
+        letter-spacing: 1.1px;
+    }
 `
 
 export const HomeFeaturesTitle = styled.h2`
@@ -61,6 +81,12 @@ export const HomeFeaturesTitle = styled.h2`
 
     text-align: center;
     color: #131b2e;
+
+    @media (min-width: 768px) and (max-width: 1024px) {
+        font-size: 26px;
+        line-height: 34px;
+        letter-spacing: -0.52px;
+    }
 `
 
 export const HomeFeaturesDescription = styled.p`
@@ -72,6 +98,11 @@ export const HomeFeaturesDescription = styled.p`
 
     text-align: center;
     color: #414753;
+    
+    @media (min-width: 768px) and (max-width: 1024px) {
+        font-size: 14px;
+        line-height: 20px;
+    }
 `
 
 
@@ -83,5 +114,13 @@ export const HomeFeaturesGrid = styled.div`
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 24px;
+  
+
+    @media (min-width: 768px) and (max-width: 1024px) {
+        max-width: 770px;
+        height: auto;
+        gap: 16px;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
 `;
 

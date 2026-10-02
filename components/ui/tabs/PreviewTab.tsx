@@ -29,6 +29,16 @@ const AppPreviewTab = styled.button<{ $active: boolean }>`
         outline-offset: 2px;
     }
 
+    @media (min-width: 768px) and (max-width: 1024px) {
+        height: 32px;
+        padding: 0 14px;
+
+        font-size: 12px;
+        line-height: 16px;
+
+        border-radius: 7px;
+    }
+
 `;
 
 type PreviewTabProps = {

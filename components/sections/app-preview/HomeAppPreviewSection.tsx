@@ -73,8 +73,7 @@ const previewCards = [
     imageSrc: "/images/screenshots/folders-preview.png",
     description: (
       <>
-        Inspect deeply nested directories to see where accumulated <br />
-        gigabytes dwell.
+        See which folders use the most space.
       </>
     ),
   },
@@ -84,8 +83,7 @@ const previewCards = [
     imageSrc: "/images/screenshots/file-types-preview.png",
     description: (
       <>
-        Isolate videos, disk images, archives, and system <br />
-        configuration entries.
+        See which file types use the most space.
       </>
     ),
   },
@@ -95,8 +93,7 @@ const previewCards = [
     imageSrc: "/images/screenshots/settings-preview.png",
     description: (
       <>
-        Lightweight, portable behavior with no intrusive system <br />
-        background services.
+        Customize the app to fit your workflow.
       </>
     ),
   },

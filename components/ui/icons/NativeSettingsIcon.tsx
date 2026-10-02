@@ -7,6 +7,11 @@ const NativeSettingsIconContainer = styled.div`
     display: flex;
     align-items: center;
     justify-content: center;
+
+    @media (min-width: 768px) and (max-width: 1024px) {
+        width: 12px;
+        height: 10px;
+    }
 `
 
 

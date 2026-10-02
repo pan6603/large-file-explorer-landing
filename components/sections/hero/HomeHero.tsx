@@ -37,7 +37,7 @@ export default function HomeHero() {
 
                         <HomeHeroTitleWrapper>
                             <HomeHeroTitle>
-                                Find what's taking up your
+                                Find what's taking up your <br />
                                 storage.
                             </HomeHeroTitle>
                         </HomeHeroTitleWrapper>
@@ -53,8 +53,6 @@ export default function HomeHero() {
                                 Download for Windows
                                 <DownloadIcon />
                             </PrimaryButtonStyle>
-                            
-                      
                         </HomeHeroActions>
 
                         <ReleaseMeta>

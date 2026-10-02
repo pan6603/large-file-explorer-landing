@@ -31,6 +31,12 @@ export const HomeHeroContainer = styled.div`
 
     margin: 0 auto;
 
+    @media (min-width: 768px) and (max-width: 1024px) {
+        height: auto;
+        align-items: flex-start;
+        padding-top: 72px;
+    }
+
 `;
 
 
@@ -45,6 +51,13 @@ export const HomeHeroContent = styled.div`
     align-items: center;
     justify-content: space-between;
 
+
+    @media (min-width: 768px) and (max-width: 1024px) {
+        height: auto;
+        justify-content: flex-start;
+        gap: 32px;
+        padding: 0 32px;
+    }
 `;
 
 export const ReleaseBadge = styled.div`
@@ -117,6 +130,12 @@ export const HomeHeroTitle = styled.h1`
     letter-spacing: -1.2px;
     text-align: center;
     color: #131b2e;
+
+    @media (min-width: 768px) and (max-width: 1024px) {
+        font-size: 40px;
+        line-height: 48px;
+        letter-spacing: -1px;
+    }
 `;
 
 
@@ -128,6 +147,13 @@ export const HomeHeroDescription = styled.p`
     letter-spacing: -0.16px;
     text-align: center;
     color: #414753;
+
+    @media (min-width: 768px) and (max-width: 1024px) {
+        font-size: 15px;
+        line-height: 22px;
+        letter-spacing: -0.15px;
+    }
+
 `;
 
 
@@ -159,10 +185,33 @@ export const ReleaseMetaText = styled.p`
     text-align: center;
 
     color: #727784;
+
+    @media (min-width: 768px) and (max-width: 1024px) {
+        font-size: 12px;
+        line-height: 16px;
+    }
 `
 
 export const AppPreview = styled.div`
-    width: fit-content;
+    width: 100%;
+    max-width: 1024px;
     height: auto;
- 
+
+    img {
+        width: 100%;
+        height: auto;
+        display: block;
+    }
+
+    /* 태블릿 */
+    @media (min-width: 768px) and (max-width: 1024px) {
+        width: calc(100% - 64px);
+        max-width: 920px;
+    }
+
+    /* 데스크톱 */
+    @media (min-width: 1025px) {
+        width: calc(100% - 80px);
+        max-width: 1024px;
+    }
 `;

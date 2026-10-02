@@ -9,16 +9,21 @@ export const DownloadIconContainer = styled.div`
     justify-content: center;
 `;
 
+type DownloadIconProps = {
+    width?: number;
+    height?: number;
+}
 
-export default function DownloadIcon() {
+
+export default function DownloadIcon({ width = 13, height = 13 }: DownloadIconProps) {
     return (
         <>
             <DownloadIconContainer>
                 <Image 
                     src="/icons/download-icon.svg"
                     alt="download-icon"
-                    width={13}
-                    height={13}
+                    width={width}
+                    height={height}
                 />
             </DownloadIconContainer>
         </>

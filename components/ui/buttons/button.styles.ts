@@ -4,13 +4,14 @@ import Link from "next/link";
 
 export const PrimaryButtonStyle = styled(Link)`
     color: #ffffff;
-    background-color: #0066CC;
+    background-color: #0066cc;
     border: none;
 
     display: inline-flex;
     align-items: center;
     justify-content: center;
     gap: 15px;
+
     height: 52px;
     padding: 14px 24px;
     border-radius: 8px;
@@ -22,8 +23,12 @@ export const PrimaryButtonStyle = styled(Link)`
     line-height: 24px;
     letter-spacing: -0.16px;
 
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-`;
+    @media (min-width: 768px) and (max-width: 1024px) {
+        height: 48px;
+        padding: 12px 20px;
+        gap: 12px;
 
+        font-size: 15px;
+        line-height: 22px;
+    }
+`;

@@ -16,10 +16,16 @@ export const HomeCtaContainer = styled.div`
     max-width: 1280px;
     width: 100%;
     height: 570px;
+    padding: 96px 20px;
     background: #FAF8FF;
     display: flex;
     align-items: center;
     justify-content: center;
+
+    @media (min-width: 768px) and (max-width: 1024px) {
+        height: 480px;
+        padding: 48px 32px;
+    }
 `
 
 export const HomeCtaWrapper = styled.div`
@@ -37,6 +43,14 @@ export const HomeCtaWrapper = styled.div`
     display: flex;
     align-items: center;
     justify-content: center;
+
+    @media (min-width: 768px) and (max-width: 1024px) {
+        max-width: 960px;
+        width: 100%;
+        height: 360px;
+        border-radius: 14px;
+    }
+    
 `
 
 export const HomeCtaContent = styled.div`
@@ -47,6 +61,12 @@ export const HomeCtaContent = styled.div`
     flex-direction: column;
     align-items: center;
     justify-content: space-between;
+
+    @media (min-width: 768px) and (max-width: 1024px) {
+        max-width: 600px;
+        height: 260px;
+        padding: 0 24px;
+    }
 `
 
 
@@ -58,6 +78,12 @@ export const HomeCTAHeading = styled.h2`
     letter-spacing: -0.6px;
     text-align: center;
     color: #131b2e;
+
+    @media (min-width: 768px) and (max-width: 1024px) {
+        font-size: 26px;
+        line-height: 34px;
+        letter-spacing: -0.5px;
+    }
 `
 
 export const HomeCTADescription = styled.p`
@@ -68,6 +94,12 @@ export const HomeCTADescription = styled.p`
     letter-spacing: -0.16px;
     text-align: center;
     color: #414753;
+
+    @media (min-width: 768px) and (max-width: 1024px) {
+        font-size: 14px;
+        line-height: 22px;
+        letter-spacing: -0.14px;
+    }
 `
 
 
@@ -79,6 +111,11 @@ export const HomeCTAButtons = styled.div`
     align-items: center;
     justify-content: center;
     gap: 16px;
+
+    @media (min-width: 768px) and (max-width: 1024px) {
+        max-width: 600px;
+        gap: 12px;
+    }
 `
 
 export const HomeCTAMeta = styled.p`
@@ -89,6 +126,11 @@ export const HomeCTAMeta = styled.p`
     letter-spacing: 0;
     text-align: center;
     color: #727784;
+
+    @media (min-width: 768px) and (max-width: 1024px) {
+        font-size: 11px;
+        line-height: 15px;
+    }
 `
 
 export const HomeCTADownloadButton = styled(Link)`
@@ -102,6 +144,13 @@ export const HomeCTADownloadButton = styled(Link)`
     border: none;
     border-radius: 8px;
     background: #0066cc;
+
+    @media (min-width: 768px) and (max-width: 1024px) {
+        max-width: 248px;
+        height: 52px;
+        padding: 14px 28px;
+        gap: 10px;
+    }
 `
 
 export const HomeCTADownloadButtonText = styled.span`
@@ -112,6 +161,12 @@ export const HomeCTADownloadButtonText = styled.span`
     letter-spacing: -0.16px;
     text-align: center;
     color: #ffffff;
+
+    @media (min-width: 768px) and (max-width: 1024px) {
+        font-size: 14px;
+        line-height: 22px;
+        letter-spacing: -0.14px;
+    }
 `
 
 export const HomeCTASourceRepository = styled(Link)`

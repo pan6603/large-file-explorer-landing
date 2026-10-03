@@ -10,6 +10,10 @@ export const FooterContainer = styled.footer`
     display: flex;
     align-items: center;
     justify-content: center;
+
+    @media (min-width: 768px) and (max-width: 1024px) {
+        padding: 24px 32px;
+    }
 `
 
 
@@ -19,6 +23,13 @@ export const FooterWrapper = styled.div`
     height: 109px;
     padding-left: 20px;
     padding-right: 20px;
+
+    @media (min-width: 768px) and (max-width: 1024px) {
+        max-width: 1024px;
+        height: auto;
+        min-height: 80px;
+        padding: 20px 24px;
+    }
 `
 
 export const FooterContent = styled.div`
@@ -27,25 +38,41 @@ export const FooterContent = styled.div`
     display: flex;
     align-items: center;
     justify-content: space-between;
+
+    @media (min-width: 768px) and (max-width: 1024px) {
+        height: auto;
+        min-height: 80px;
+        gap: 24px;
+    }
 `
 
 export const FooterBrand = styled.div`
     max-width: 571px;
     width: 100%;
     height: 44px;
-
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+
+    @media (min-width: 768px) and (max-width: 1024px) {
+        max-width: 420px;
+        height: auto;
+        gap: 4px;
+    }
 `
 
 export const FooterBrandTitleContainer = styled.div`
     max-width: 166px;
     width: 100%;
     height: 24px;
-  
     display: flex;
     align-items: center;
+
+    @media (min-width: 768px) and (max-width: 1024px) {
+        max-width: 150px;
+        height: 22px;
+        
+    }
 `
 
 export const FooterBrandTitle = styled.span`
@@ -55,6 +82,11 @@ export const FooterBrandTitle = styled.span`
     line-height: 24px;
     letter-spacing: 0;
     color: #131b2e;   
+
+    @media (min-width: 768px) and (max-width: 1024px) {
+        font-size: 14px;
+        line-height: 22px;
+    }
 `
 
 
@@ -65,6 +97,19 @@ export const FooterBrandDescription = styled.p`
     line-height: 16px;
     letter-spacing: 0;
     color: #414753;
+
+    .tablet-br {
+        display: none;
+    }
+
+    @media (min-width: 768px) and (max-width: 1024px) {
+        font-size: 9px;
+        line-height: 13px;
+
+        .tablet-br {
+            display: block;
+        }
+    }
 `
 
 export const FooterLinks = styled.div`
@@ -74,6 +119,12 @@ export const FooterLinks = styled.div`
     display: flex;
     align-items: center;
     justify-content: space-between;
+
+    @media (min-width: 768px) and (max-width: 1024px) {
+        max-width: 420px;
+        height: auto;
+        gap: 16px;
+    }
 `
 
 
@@ -84,6 +135,11 @@ export const FooterLink = styled(Link)`
     line-height: 16px;
     letter-spacing: 0;
     color: #414753;
+
+    @media (min-width: 768px) and (max-width: 1024px) {
+        font-size: 9px;
+        line-height: 13px;
+    }
 `
 
 export const FooterPlatform = styled.span`
@@ -93,4 +149,9 @@ export const FooterPlatform = styled.span`
     line-height: 16px;
     letter-spacing: 0;
     color: #414753;
+
+    @media (min-width: 768px) and (max-width: 1024px) {
+        font-size: 9px;
+        line-height: 13px;
+    }
 `

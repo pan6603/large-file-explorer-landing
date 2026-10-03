@@ -24,7 +24,8 @@ export default function Footer() {
                                 <FooterBrandTitle>Large File Explorer</FooterBrandTitle>
                             </FooterBrandTitleContainer>
                             <FooterBrandDescription>
-                                © 2024 Large File Explorer. Free & Open Source native Windows utility. Released under MIT License.
+                                © 2024 Large File Explorer. <br className="tablet-br" />
+                                Free & Open Source native Windows utility. Released under MIT License.
                             </FooterBrandDescription>
                         </FooterBrand>
                         <FooterLinks>

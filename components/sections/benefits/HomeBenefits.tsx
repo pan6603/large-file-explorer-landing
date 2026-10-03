@@ -24,10 +24,7 @@ const benefits = [
     title: "Pure & Simple",
     description: (
       <>
-        Zero telemetry bloat, zero background <br />
-        services, and zero unsolicited <br />
-        notifications. Just a clean disk analyzer <br />
-        when you need it.
+        No telemetry, background services, or unwanted distractions. Just a clean and focused
       </>
     ),
   },
@@ -36,10 +33,7 @@ const benefits = [
     title: "Engineered Fast",
     description: (
       <>
-        Traverses NTFS and exFAT filesystem <br />
-        structures with optimized asynchronous <br />
-        scanning routines that respect CPU <br />
-        resources.
+        Optimized scanning delivers fast results while keeping CPU and system resource usage low.
       </>
     ),
   },
@@ -48,10 +42,7 @@ const benefits = [
     title: "Windows Focused",
     description: (
       <>
-        Respects standard Windows <br />
-        conventions, path formats, and system <br />
-        drive structures (Windows 10 and <br />
-        Windows 11 64-bit compatible).
+        Designed around standard Windows conventions, file systems, and familiar desktop workflows.
       </>
     ),
   },
@@ -60,9 +51,7 @@ const benefits = [
     title: "Easy to Use",
     description: (
       <>
-        Intuitive folder picker and instant rescan <br />
-        controls. No terminal syntax or complex <br />
-        command line flags to memorize.
+        Choose a folder, start scanning, and rescan anytime with simple and intuitive controls.
       </>
     ),
   },

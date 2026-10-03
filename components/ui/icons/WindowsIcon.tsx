@@ -8,6 +8,13 @@ export const WindowsIconContainer = styled.div`
     display: flex;
     align-items: center;
     justify-content: center;
+
+    @media (min-width: 768px) and (max-width: 1024px) {
+        img {
+            width: 18px;
+            height: 18px;
+        }
+    }
 `;
 
 

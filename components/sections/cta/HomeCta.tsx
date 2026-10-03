@@ -36,8 +36,7 @@ export default function HomeCta() {
                             <DownloadBoxIcon />
                             <HomeCTAHeading>Take control of your storage.</HomeCTAHeading>
                             <HomeCTADescription>
-                                Find large and duplicate files without digging through folders manually. Completely free <br />
-                                and open-source desktop utility.
+                                Find large and duplicate files effortlessly. A fast, free, and open-source desktop utility.
                             </HomeCTADescription>
                             <HomeCTAButtons>
                                 <HomeCTADownloadButton href="https://github.com/pan6603/large-file-explorer-downloads/releases/download/v1.0.0/large-file-explorer-amd64-installer.exe">

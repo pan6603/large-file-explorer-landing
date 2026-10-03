@@ -138,6 +138,14 @@ export const BenefitCardContainer = styled.div`
     background: #FAF8FF;
     border: #C1C6D5;
     border-radius: 12px;
+
+    @media (min-width: 768px) and (max-width: 1024px) {
+        max-width: none;
+        width: 100%;
+        height: 180px;
+        padding: 20px;
+        border-radius: 10px;
+    }
 `
 
 
@@ -147,10 +155,13 @@ export const BenefitCardTitle = styled.h3`
     font-size: 16px;
     line-height: 24px;
     letter-spacing: 0;
-
     text-align: left;
-
     color: #131b2e;
+
+    @media (min-width: 768px) and (max-width: 1024px) {
+        font-size: 14px;
+        line-height: 20px;
+    }
 `
 
 
@@ -161,6 +172,10 @@ export const BenefitCardDescription = styled.p`
     line-height: 19.5px;
     letter-spacing: 0;
     text-align: left;
-
     color: #414753;
+
+    @media (min-width: 768px) and (max-width: 1024px) {
+        font-size: 11px;
+        line-height: 18px;
+    }
 `

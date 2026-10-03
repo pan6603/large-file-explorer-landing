@@ -10,6 +10,17 @@ export const CheckCircleIconContainer = styled.div`
     justify-content: center;
     background: #D7E3FF;
     border-radius: 8px;
+
+    @media (min-width: 768px) and (max-width: 1024px) {
+        max-width: 36px;
+        height: 36px;
+        border-radius: 7px;
+
+        img {
+            width: 16px;
+            height: 16px;
+        }
+    }
 `;
 
 

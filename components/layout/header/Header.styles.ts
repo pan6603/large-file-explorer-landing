@@ -9,7 +9,7 @@ export const HeaderContainer = styled.header`
     height: auto;
     background-color: #ffffff;
     border: 1px solid #c1c6d566;
-    z-index: 10;
+    z-index: 1000;
 `;
 
 export const HeaderInner = styled.div`
@@ -25,6 +25,11 @@ export const HeaderInner = styled.div`
     @media ${tabletBreakpoint} {
         padding: 0 20px;
     }
+
+    @media (max-width: 767px) {
+        height: 56px;
+        padding: 0 16px;
+    }
 `;
 
 export const HeaderLogo = styled.div`
@@ -34,6 +39,11 @@ export const HeaderLogo = styled.div`
     display: flex;
     align-items: center;
     justify-content: space-between;
+
+    @media (max-width: 767px) {
+        max-width: 155px;
+        height: 28px;
+    }
 `;
 
 export const LogoIconContainer = styled.div`
@@ -42,6 +52,12 @@ export const LogoIconContainer = styled.div`
     height: 32px;
     border-radius: 8px;
     background-color: #0066cc;
+
+    @media (max-width: 767px) {
+        max-width: 28px;
+        height: 28px;
+        border-radius: 7px;
+    }
 `;
 
 export const LogoIconText = styled.span`
@@ -50,6 +66,12 @@ export const LogoIconText = styled.span`
     font-weight: 700;
     font-size: 15px;
     color: #131b2e;
+
+    @media (max-width: 767px) {
+        font-size: 13px;
+        line-height: 18px;
+        white-space: nowrap;
+    }
 `;
 
 export const NavContainer = styled.nav`
@@ -61,6 +83,10 @@ export const NavContainer = styled.nav`
     justify-content: space-between;
 
     @media ${tabletBreakpoint} {
+        display: none;
+    }
+
+    @media (max-width: 767px) {
         display: none;
     }
 `;
@@ -85,6 +111,14 @@ export const HeaderActions = styled.div`
         max-width: 343px;
         height: 40px;
     }
+
+    @media (max-width: 767px) {
+        max-width: 170px;
+        height: 32px;
+        gap: 12px;
+        justify-content: flex-end;
+        
+    }
 `;
 
 export const GitHubButton = styled(Link)`
@@ -99,6 +133,13 @@ export const GitHubButton = styled(Link)`
     display: flex;
     align-items: center;
     justify-content: space-between;
+
+    @media (max-width: 767px) {
+        width: 38px;
+        height: 30px;
+        padding: 5px 10px;
+        border-radius: 7px;
+    }
 `;
 
 export const GitHubButtonText = styled.span`
@@ -107,6 +148,10 @@ export const GitHubButtonText = styled.span`
     font-weight: 500;
     font-size: 12px;
     color: #414753;
+
+    @media (max-width: 767px) {
+        display: none;
+    }
 `;
 
 export const DownloadButton = styled(Link)`
@@ -119,6 +164,13 @@ export const DownloadButton = styled(Link)`
     display: flex;
     align-items: center;
     justify-content: space-between;
+
+    @media (max-width: 767px) {
+        width: 38px;
+        height: 30px;
+        padding: 5px 10px;
+        border-radius: 7px;
+    }
 `;
 
 export const DownloadButtonText = styled.span`
@@ -127,6 +179,10 @@ export const DownloadButtonText = styled.span`
     font-weight: 600;
     font-size: 12px;
     color: #ffffff;
+
+    @media (max-width: 767px) {
+        display: none;
+    }
 `;
 
 export const MenuButton = styled.button`
@@ -154,9 +210,17 @@ export const MenuButton = styled.button`
         display: flex;
         flex: 0 0 40px;
     }
+
+    @media (max-width: 767px) {
+        width: 32px;
+        height: 32px;
+        flex: 0 0 32px;
+        border-radius: 7px;
+        display: flex;
+    }
 `;
 
-export const TabletMenu = styled.nav`
+export const ResponsiveMenu = styled.nav`
     position: absolute;
     top: calc(100% + 8px);
     right: 20px;
@@ -172,24 +236,52 @@ export const TabletMenu = styled.nav`
     @media ${tabletBreakpoint} {
         display: block;
     }
+
+
+    @media (max-width: 767px) {
+        display: block;
+
+        top: calc(100% + 6px);
+        right: 16px;
+
+        max-width: none;
+        width: calc(100% - 32px);
+
+        padding: 8px;
+        border-radius: 8px;
+    }
 `;
 
-export const TabletMenuList = styled.ul`
+export const ResponsiveMenuList = styled.ul`
     width: 100%;
     margin: 0;
     padding: 0;
     list-style: none;
+
+    @media (max-width: 767px) {
+        display: flex;
+        flex-direction: column;
+        gap: 2px;
+    }
 `;
 
-export const TabletMenuEntry = styled.li`
+export const ResponsiveMenuEntry = styled.li`
     width: 100%;
 
     &:not(:last-child) {
         border-bottom: 1px solid rgba(193, 198, 213, 0.35);
     }
+
+    @media (max-width: 767px) {
+        border-bottom: none;
+
+        &:not(:last-child) {
+            border-bottom: none;
+        }
+    }
 `;
 
-export const TabletMenuItem = styled(Link)`
+export const ResponsiveMenuItem = styled(Link)<{ $center?: boolean }>`
     width: 100%;
     min-height: 48px;
     padding: 0 12px;
@@ -211,9 +303,21 @@ export const TabletMenuItem = styled(Link)`
         outline: 2px solid #0066cc;
         outline-offset: -2px;
     }
+
+    @media (max-width: 767px) {
+        min-height: 44px;
+        padding: 0 10px;
+        gap: 8px;
+        font-size: 13px;
+
+        justify-content: ${({ $center }) => $center ? "center" : "flex-start"};
+        border: ${({ $center }) => $center
+            ? "1px solid rgba(193, 198, 213, 0.6)"
+            : "none"};
+    }
 `;
 
-export const TabletDownloadItem = styled(TabletMenuItem)`
+export const ResponsiveDownloadItem = styled(ResponsiveMenuItem)`
     margin-top: 8px;
     min-height: 44px;
     background-color: #0066cc;
@@ -227,5 +331,12 @@ export const TabletDownloadItem = styled(TabletMenuItem)`
 
     &:focus-visible {
         outline-color: #131b2e;
+    }
+
+    @media (max-width: 767px) {
+        min-height: 44px;
+
+        justify-content: center;
+        gap: 8px;
     }
 `;

@@ -15,11 +15,11 @@ import {
     MenuButton,
     NavContainer,
     NavItem,
-    TabletDownloadItem,
-    TabletMenu,
-    TabletMenuEntry,
-    TabletMenuItem,
-    TabletMenuList,
+    ResponsiveMenu,
+    ResponsiveMenuEntry,
+    ResponsiveMenuItem,
+    ResponsiveMenuList,
+    ResponsiveDownloadItem,
 } from "@/components/layout/header/Header.styles";
 import LogoIcon from "@/components/layout/header/LogoIcon";
 import CloseIcon from "@/components/ui/icons/CloseIcon";
@@ -88,40 +88,41 @@ export default function Header() {
             </HeaderInner>
 
             {isMenuOpen && (
-                <TabletMenu
-                    id="tablet-navigation-menu"
-                    aria-label="Tablet navigation"
+                <ResponsiveMenu
+                    id="responsive-navigation-menu"
+                    aria-label="Responsive navigation"
                 >
-                    <TabletMenuList>
+                    <ResponsiveMenuList>
                         {NAV_ITEMS.map(({ label, href }) => (
-                            <TabletMenuEntry key={href}>
-                                <TabletMenuItem href={href} onClick={closeMenu}>
+                            <ResponsiveMenuEntry key={href}>
+                                <ResponsiveMenuItem href={href} onClick={closeMenu}>
                                     {label}
-                                </TabletMenuItem>
-                            </TabletMenuEntry>
+                                </ResponsiveMenuItem>
+                            </ResponsiveMenuEntry>
                         ))}
 
-                        <TabletMenuEntry>
-                            <TabletMenuItem
+                        <ResponsiveMenuEntry>
+                            <ResponsiveMenuItem
                                 href={GITHUB_RELEASE_URL}
                                 onClick={closeMenu}
+                                $center
                             >
                                 <GithubIcon />
                                 GitHub
-                            </TabletMenuItem>
-                        </TabletMenuEntry>
+                            </ResponsiveMenuItem>
+                        </ResponsiveMenuEntry>
 
-                        <TabletMenuEntry>
-                            <TabletDownloadItem
+                        <ResponsiveMenuEntry>
+                            <ResponsiveDownloadItem
                                 href={WINDOWS_DOWNLOAD_URL}
                                 onClick={closeMenu}
                             >
                                 <WindowsIcon width={16} height={16} />
                                 Download for Windows
-                            </TabletDownloadItem>
-                        </TabletMenuEntry>
-                    </TabletMenuList>
-                </TabletMenu>
+                            </ResponsiveDownloadItem>
+                        </ResponsiveMenuEntry>
+                    </ResponsiveMenuList>
+                </ResponsiveMenu>
             )}
         </HeaderContainer>
     );

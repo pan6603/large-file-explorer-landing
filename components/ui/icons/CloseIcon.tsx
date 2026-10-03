@@ -7,6 +7,14 @@ export const CloseIconContainer = styled.span`
     display: flex;
     align-items: center;
     justify-content: center;
+
+    @media (max-width: 767px) {
+    
+        img {
+            width: 12px;
+            height: 12px;
+        }
+    }
 `;
 
 type CloseIconProps = {

@@ -7,6 +7,14 @@ export const HamburgerIconContainer = styled.span`
     display: flex;
     align-items: center;
     justify-content: center;
+
+    @media (max-width: 767px) {
+    
+        img {
+            width: 15px;
+            height: 15px;
+        }
+    }
 `;
 
 type HamburgerIconProps = {

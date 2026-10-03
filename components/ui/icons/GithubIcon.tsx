@@ -8,6 +8,13 @@ export const GithubIconContainer = styled.div`
     display: flex;
     align-items: center;
     justify-content: center;
+
+    @media (max-width: 767px) {
+        img {
+            width: 15px;
+            height: 15px;
+        }
+    }
 `;
 
 

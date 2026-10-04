@@ -23,6 +23,13 @@ export const WindowsIconContainer = styled.div`
             height: 15px;
         }
     }
+
+    @media (max-width: 767px) {
+        img {
+            width: 16px;
+            height: 16px;
+        }
+    }
 `;
 
 

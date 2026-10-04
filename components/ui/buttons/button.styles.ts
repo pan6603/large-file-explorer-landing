@@ -31,4 +31,14 @@ export const PrimaryButtonStyle = styled(Link)`
         font-size: 15px;
         line-height: 22px;
     }
+
+    @media (max-width: 767px) {
+        height: 48px;
+        padding: 12px 20px;
+        gap: 10px;
+
+        font-size: 14px;
+        line-height: 20px;
+        letter-spacing: -0.14px;
+    }
 `;

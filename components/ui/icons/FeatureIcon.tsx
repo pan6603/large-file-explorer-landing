@@ -27,6 +27,19 @@ export const FeatureIconContainer = styled.div`
             height: 16px;
         }
     }
+
+    @media (max-width: 767px) {
+        max-width: 40px;
+        width: 40px;
+        height: 40px;
+        border-radius: 7px;
+        flex-shrink: 0;
+
+        img {
+            width: 16px;
+            height: 16px;
+        }
+    }
 `;
 
 

@@ -21,6 +21,16 @@ export const FeatureCardContainer = styled.div`
         padding: 20px;
         border-radius: 10px;
     }
+
+    @media (max-width: 767px) {
+        max-width: none;
+        width: 100%;
+        height: auto;
+        min-height: 180px;
+        padding: 20px;
+        gap: 4px;
+        border-radius: 10px;
+    }
 `
 
 export const FeatureTitleContainer = styled.div`
@@ -31,6 +41,14 @@ export const FeatureTitleContainer = styled.div`
     @media (min-width: 768px) and (max-width: 1024px) {
         max-width: none;
         min-height: 20px;
+    }
+
+    @media (max-width: 767px) {
+        max-width: none;
+        width: 100%;
+        height: auto;
+        min-height: 40px;
+        
     }
 `
 
@@ -47,6 +65,12 @@ export const FeatureTitle = styled.h3`
     @media (min-width: 768px) and (max-width: 1024px) {
         font-size: 14px;
         line-height: 20px;
+    }
+
+    @media (max-width: 767px) {
+        font-size: 13px;
+        line-height: 18px;
+        letter-spacing: 0;
     }
 `;
 
@@ -65,6 +89,13 @@ export const FeatureCardSubtitle = styled.span`
         line-height: 14px;
         letter-spacing: 0.4px;
     }
+
+    @media (max-width: 767px) {
+        font-size: 10px;
+        line-height: 14px;
+        letter-spacing: 0.4px;
+        
+    }
 `
 
 
@@ -81,6 +112,11 @@ export const FeatureDescription = styled.p`
     @media (min-width: 768px) and (max-width: 1024px) {
         font-size: 12px;
         line-height: 16px;
+    }
+
+    @media (max-width: 767px) {
+        font-size: 12px;
+        line-height: 18px;
     }
 `
 

@@ -22,6 +22,13 @@ export const HomeHeroContainer = styled.div`
         min-height: 900px;
         padding: 64px 0;
     }
+
+    @media (max-width: 767px) {
+        height: auto;
+        min-height: 0;
+        padding: 48px 16px;
+        align-items: flex-start;
+    }
 `;
 
 export const HomeFeaturesContent = styled.div`
@@ -39,6 +46,13 @@ export const HomeFeaturesContent = styled.div`
         height: 780px;
     }
 
+    @media (max-width: 767px) {
+        max-width: 100%;
+        width: 100%;
+        height: auto;
+        justify-content: flex-start;
+        gap: 40px;
+    }
 `;
 
 
@@ -50,6 +64,15 @@ export const HomeFeaturesHeader = styled.div`
     flex-direction: column;
     align-items: center;
     justify-content: space-between;
+
+    @media (max-width: 767px) {
+        max-width: 360px;
+        width: 100%;
+        height: auto;
+
+        justify-content: flex-start;
+        gap: 0px;
+    }
 `;
 
 
@@ -70,6 +93,12 @@ export const HomeFeaturesEyebrow = styled.div`
         line-height: 16px;
         letter-spacing: 1.1px;
     }
+
+    @media (max-width: 767px) {
+        font-size: 10px;
+        line-height: 14px;
+        letter-spacing: 1px;
+    }
 `
 
 export const HomeFeaturesTitle = styled.h2`
@@ -86,6 +115,12 @@ export const HomeFeaturesTitle = styled.h2`
         font-size: 26px;
         line-height: 34px;
         letter-spacing: -0.52px;
+    }
+
+    @media (max-width: 767px) {
+        font-size: 24px;
+        line-height: 32px;
+        letter-spacing: -0.48px;
     }
 `
 
@@ -121,6 +156,15 @@ export const HomeFeaturesGrid = styled.div`
         height: auto;
         gap: 16px;
         grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    @media (max-width: 767px) {
+        max-width: 100%;
+        width: 100%;
+        height: auto;
+
+        grid-template-columns: 1fr;
+        gap: 16px;
     }
 `;
 

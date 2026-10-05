@@ -48,7 +48,7 @@ export default function HomeHero() {
                         </HomeHeroDescription>
 
                         <HomeHeroActions>
-                            <PrimaryButtonStyle href="https://github.com/pan6603/large-file-explorer-downloads/releases/download/v1.0.0/large-file-explorer-amd64-installer.exe">
+                            <PrimaryButtonStyle href="https://github.com/pan6603/large-file-explorer-downloads/releases/download/v1.0.1/FileMap-amd64-installer.exe">
                                 <WindowsIcon />
                                 Download for Windows
                                 <DownloadIcon />

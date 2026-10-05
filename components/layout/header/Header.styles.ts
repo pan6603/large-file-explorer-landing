@@ -33,13 +33,19 @@ export const HeaderInner = styled.div`
 `;
 
 export const HeaderLogo = styled.div`
-    max-width: 177px;
-    width: 100%;
+    /* Desktop: 1025px 이상 */
+    width: fit-content;
     height: 32px;
     display: flex;
     align-items: center;
     justify-content: space-between;
 
+    /* Tablet: 768px ~ 1024px */
+    @media (min-width: 768px) and (max-width: 1024px) {
+        height: 30px;
+    }
+
+    /* Mobile: 767px 이하 */
     @media (max-width: 767px) {
         max-width: 155px;
         height: 28px;
@@ -47,14 +53,24 @@ export const HeaderLogo = styled.div`
 `;
 
 export const LogoIconContainer = styled.div`
-    max-width: 32px;
-    width: 100%;
+    /* Desktop: 1025px 이상 */
+    width: 32px;
     height: 32px;
     border-radius: 8px;
-    background-color: #0066cc;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 
+    /* Tablet: 768px ~ 1024px */
+    @media (min-width: 768px) and (max-width: 1024px) {
+        width: 30px;
+        height: 30px;
+        border-radius: 7px;
+    }
+
+    /* Mobile: 767px 이하 */
     @media (max-width: 767px) {
-        max-width: 28px;
+        width: 28px;
         height: 28px;
         border-radius: 7px;
     }
@@ -64,15 +80,24 @@ export const LogoIconText = styled.span`
     width: fit-content;
     font-family: "Inter", sans-serif;
     font-weight: 700;
-    font-size: 15px;
+    font-size: 16px;
+    line-height: 20px;
     color: #131b2e;
+    white-space: nowrap;
 
+    /* Tablet: 768px ~ 1024px */
+    @media (min-width: 768px) and (max-width: 1024px) {
+        font-size: 14px;
+        line-height: 20px;
+    }
+
+    /* Mobile: 767px 이하 */
     @media (max-width: 767px) {
         font-size: 13px;
         line-height: 18px;
-        white-space: nowrap;
     }
 `;
+
 
 export const NavContainer = styled.nav`
     max-width: 426px;

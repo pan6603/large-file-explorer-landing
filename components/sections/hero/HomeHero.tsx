@@ -43,7 +43,7 @@ export default function HomeHero() {
                         </HomeHeroTitleWrapper>
 
                         <HomeHeroDescription>
-                            Large File Explorer is a native Windows desktop app that helps you quickly find large files, <br />
+                            FileMap is a native Windows desktop app that helps you quickly find large files, <br />
                             duplicate files, and understand what's using your storage.
                         </HomeHeroDescription>
 

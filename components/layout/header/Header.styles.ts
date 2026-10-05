@@ -125,12 +125,13 @@ export const NavItem = styled(Link)`
 `;
 
 export const HeaderActions = styled.div`
-    max-width: 289px;
+    max-width: 189px;
     width: 100%;
     height: 32px;
     display: flex;
+    gap: 12px;
+    justify-content: flex-end;
     align-items: center;
-    justify-content: space-between;
 
     @media ${tabletBreakpoint} {
         max-width: 343px;

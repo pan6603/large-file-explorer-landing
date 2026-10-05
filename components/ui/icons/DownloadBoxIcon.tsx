@@ -10,6 +10,20 @@ export const DownloadBoxIconContainer = styled.div`
     align-items: center;
     justify-content: center;
     border-radius: 12px;
+
+    @media (max-width: 767px) {
+        max-width: 40px;
+        width: 40px;
+        height: 40px;
+        border-radius: 10px;
+        flex-shrink: 0;
+
+        img,
+        svg {
+            width: 20px;
+            height: 20px;
+        }
+    }
 `
 
 

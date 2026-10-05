@@ -94,7 +94,6 @@ export const FeatureCardSubtitle = styled.span`
         font-size: 10px;
         line-height: 14px;
         letter-spacing: 0.4px;
-        
     }
 `
 
@@ -201,6 +200,15 @@ export const BenefitCardContainer = styled.div`
         padding: 20px;
         border-radius: 10px;
     }
+
+    @media (max-width: 767px) {
+        max-width: none;
+        width: 100%;
+        height: auto;
+        min-height: 160px;
+        padding: 20px;
+        border-radius: 10px;
+    }
 `
 
 
@@ -217,6 +225,12 @@ export const BenefitCardTitle = styled.h3`
         font-size: 14px;
         line-height: 20px;
     }
+
+    @media (max-width: 767px) {
+        font-size: 14px;
+        line-height: 20px;
+        text-align: left;
+    }
 `
 
 
@@ -232,5 +246,11 @@ export const BenefitCardDescription = styled.p`
     @media (min-width: 768px) and (max-width: 1024px) {
         font-size: 11px;
         line-height: 18px;
+    }
+
+    @media (max-width: 767px) {
+        font-size: 11px;
+        line-height: 18px;
+        text-align: left;
     }
 `

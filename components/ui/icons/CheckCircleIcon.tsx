@@ -21,6 +21,19 @@ export const CheckCircleIconContainer = styled.div`
             height: 16px;
         }
     }
+
+    @media (max-width: 767px) {
+        max-width: 36px;
+        width: 36px;
+        height: 36px;
+        flex-shrink: 0;
+        border-radius: 7px;
+
+        img {
+            width: 16px;
+            height: 16px;
+        }
+    }
 `;
 
 

@@ -25,6 +25,14 @@ export const HomeBenefitsContainer = styled.div`
         height: 680px;
         padding: 64px 32px;
     }
+
+    @media (max-width: 767px) {
+        max-width: 100%;
+        height: auto;
+        padding: 48px 16px;
+        align-items: flex-start;
+        justify-content: center;
+    }
 `
 
 export const HomeBenefitsWrapper = styled.div`
@@ -44,6 +52,15 @@ export const HomeBenefitsWrapper = styled.div`
         padding: 0 32px;
         gap: 48px;
     }
+
+    @media (max-width: 767px) {
+        max-width: 100%;
+        width: 100%;
+        height: auto;
+        padding: 0;
+        gap: 40px;
+        justify-content: flex-start;
+    }
 `
 
 export const HomeBenefitsHeader = styled.div`
@@ -54,6 +71,16 @@ export const HomeBenefitsHeader = styled.div`
     flex-direction: column;
     align-items: center;
     justify-content: space-between;
+
+    @media (max-width: 767px) {
+        max-width: 360px;
+        width: 100%;
+        height: auto;
+        gap: 12px;
+        align-items: center;
+        justify-content: flex-start;
+        text-align: center;
+    }
 `
 
 export const HomeBenefitsGrid = styled.div`
@@ -68,6 +95,15 @@ export const HomeBenefitsGrid = styled.div`
         display: grid;
         grid-template-columns: repeat(2, 1fr);
         gap: 20px;
+        align-items: stretch;
+    }
+
+    @media (max-width: 767px) {
+        width: 100%;
+        height: auto;
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 16px;
         align-items: stretch;
     }
 `
@@ -86,6 +122,13 @@ export const HomeBenefitsEyebrow = styled.span`
         line-height: 14px;
         letter-spacing: 1px;
     }
+
+    @media (max-width: 767px) {
+        font-size: 10px;
+        line-height: 14px;
+        letter-spacing: 1px;
+        text-align: center;
+    }
 `
 
 export const HomeBenefitsTitle = styled.h2`
@@ -102,6 +145,13 @@ export const HomeBenefitsTitle = styled.h2`
         line-height: 34px;
         letter-spacing: -0.5px;
     }
+
+    @media (max-width: 767px) {
+        font-size: 24px;
+        line-height: 32px;
+        letter-spacing: -0.48px;
+        text-align: center;
+    }
 `
 
 
@@ -117,5 +167,11 @@ export const HomeBenefitsDescription = styled.p`
     @media (min-width: 768px) and (max-width: 1024px) {
         font-size: 12px;
         line-height: 18px;
+    }
+
+    @media (max-width: 767px) {
+        font-size: 12px;
+        line-height: 18px;
+        text-align: center;
     }
 `

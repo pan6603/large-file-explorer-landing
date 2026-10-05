@@ -127,6 +127,14 @@ export const AppPreviewCardHeader = styled.div`
     display: flex;
     gap: 8px;
     align-items: center;
+
+    @media (max-width: 767px) {
+        width: 100%;
+        height: auto;
+        min-height: 16px;
+        gap: 8px;
+        align-items: center;
+    }
 `
 
 export const AppPreviewCardTitle = styled.span`
@@ -139,6 +147,11 @@ export const AppPreviewCardTitle = styled.span`
     color: #004e9f;
 
     @media (min-width: 768px) and (max-width: 1024px) {
+        font-size: 11px;
+        line-height: 16px;
+    }
+
+    @media (max-width: 767px) {
         font-size: 11px;
         line-height: 16px;
     }
@@ -162,6 +175,12 @@ export const AppPreviewCardDescription = styled.p`
         width: 100%;
         font-size: 9px;
         line-height: 14px;
+    }
+
+    @media (max-width: 767px) {
+        width: 100%;
+        font-size: 11px;
+        line-height: 16px;
     }
 `;
 

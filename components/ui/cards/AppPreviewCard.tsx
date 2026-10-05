@@ -18,6 +18,13 @@ const AppPreviewCardContainer = styled.div`
     display: flex;
     flex-direction: column;
     gap: 8px;
+
+    @media (max-width: 767px) {
+        width: 100%;
+        height: auto;
+        padding: 16px;
+        gap: 10px;
+    }
 `
 
 

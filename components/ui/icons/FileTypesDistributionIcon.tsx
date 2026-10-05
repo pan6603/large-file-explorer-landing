@@ -12,6 +12,12 @@ const FileTypesDistributionIconContainer = styled.div`
         width: 12px;
         height: 10px;
     }
+
+    @media (max-width: 767px) {
+        width: 12px;
+        height: 10px;
+        flex-shrink: 0;
+    }
 `
 
 

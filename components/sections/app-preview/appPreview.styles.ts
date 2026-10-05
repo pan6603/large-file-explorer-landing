@@ -6,7 +6,6 @@ export const HomeAppPreviewContainer = styled.section`
     height: auto;
     background-color: #FAF8FF;
     border: 1px solid rgba(193, 198, 213, 0.3);
-    
 `;
 
 export const HomeAppPreviewWrapper = styled.div`
@@ -20,6 +19,12 @@ export const HomeAppPreviewWrapper = styled.div`
         max-width: 1024px;
         height: auto;
         padding: 72px 32px;
+    }
+
+    @media (max-width: 767px) {
+        max-width: 100%;
+        height: auto;
+        padding: 48px 16px;
     }
 `
 
@@ -41,6 +46,16 @@ export const HomeAppPreviewContent = styled.div`
         gap: 32px;
         justify-content: flex-start;
     }
+
+    @media (max-width: 767px) {
+        max-width: 100%;
+        width: 100%;
+        height: auto;
+        padding: 0;
+
+        gap: 32px;
+        justify-content: flex-start;
+    }
 `
 
 export const HomeAppPreviewHeader = styled.div`
@@ -56,6 +71,13 @@ export const HomeAppPreviewHeader = styled.div`
         justify-content: flex-start;
         gap: 24px;
     }
+
+    @media (max-width: 767px) {
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-start;
+        gap: 20px;
+    }
 `;
 
 export const HomeAppPreviewIntro = styled.div`
@@ -65,6 +87,13 @@ export const HomeAppPreviewIntro = styled.div`
 
     @media (min-width: 768px) and (max-width: 1024px) {
         max-width: 520px;
+        text-align: center;
+        margin: 0 auto;
+    }
+
+    @media (max-width: 767px) {
+        max-width: 360px;
+        width: 100%;
         text-align: center;
         margin: 0 auto;
     }
@@ -86,6 +115,14 @@ export const HomeAppPreviewEyebrow = styled.span`
         letter-spacing: 1px;
         text-align: center;
     }
+
+    @media (max-width: 767px) {
+        font-size: 10px;
+        line-height: 14px;
+        letter-spacing: 1px;
+        text-align: center;
+        
+    }
 `
 
 export const HomeAppPreviewTitle = styled.h2`
@@ -102,6 +139,13 @@ export const HomeAppPreviewTitle = styled.h2`
         font-size: 26px;
         line-height: 32px;
         letter-spacing: -0.52px;
+        text-align: center;
+    }
+
+    @media (max-width: 767px) {
+        font-size: 24px;
+        line-height: 32px;
+        letter-spacing: -0.48px;
         text-align: center;
     }
 `
@@ -122,6 +166,12 @@ export const HomeAppPreviewDescription = styled.p`
         text-align: center;
     }
 
+    @media (max-width: 767px) {
+        font-size: 12px;
+        line-height: 18px;
+        text-align: center;
+    }
+
 `
 
 export const HomeAppPreviewTabs = styled.div`
@@ -138,6 +188,15 @@ export const HomeAppPreviewTabs = styled.div`
         height: 38px;
         padding: 3px;
         border-radius: 10px;
+    }
+
+    @media (max-width: 767px) {
+        width: 100%;
+        max-width: 360px;
+        height: 40px;
+        padding: 3px;
+        border-radius: 10px;
+        gap: 2px;
     }
 `
 
@@ -165,6 +224,19 @@ export const HomeAppPreviewMain = styled.div`
             display: block;
         }
     }
+
+    @media (max-width: 767px) {
+        width: 100%;
+        height: auto;
+        border-radius: 8px;
+        overflow: hidden;
+
+        img {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+    }
 `
 
 export const HomeAppPreviewGrid = styled.div`
@@ -173,4 +245,12 @@ export const HomeAppPreviewGrid = styled.div`
     display: flex;
     align-items: center;
     justify-content: space-between;
+
+    @media (max-width: 767px) {
+        height: auto;
+        flex-direction: column;
+        align-items: stretch;
+        justify-content: flex-start;
+        gap: 24px;
+    }
 `

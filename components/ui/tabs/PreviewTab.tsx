@@ -39,6 +39,19 @@ const AppPreviewTab = styled.button<{ $active: boolean }>`
         border-radius: 7px;
     }
 
+    @media (max-width: 767px) {
+        flex: 1;
+        width: auto;
+        min-width: 0;
+        height: 34px;
+        padding: 0 6px;
+
+        font-size: 11px;
+        line-height: 14px;
+
+        border-radius: 7px;
+        
+    }
 `;
 
 type PreviewTabProps = {

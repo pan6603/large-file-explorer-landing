@@ -28,9 +28,9 @@ import HamburgerIcon from "@/components/ui/icons/HamburgerIcon";
 import WindowsIcon from "@/components/ui/icons/WindowsIcon";
 
 const GITHUB_RELEASE_URL =
-    "https://github.com/pan6603/large-file-explorer-downloads/releases/tag/v1.0.1";
+    "";
 const WINDOWS_DOWNLOAD_URL =
-    "https://github.com/pan6603/large-file-explorer-downloads/releases/download/v1.0.1/FileMap-amd64-installer.exe";
+    "";
 
 const NAV_ITEMS = [
     { label: "Features", href: "#features" },
@@ -61,10 +61,10 @@ export default function Header() {
                 </NavContainer>
 
                 <HeaderActions>
-                    <GitHubButton href={GITHUB_RELEASE_URL}>
+                    {/* <GitHubButton href={GITHUB_RELEASE_URL}>
                         <GithubIcon />
                         <GitHubButtonText>GitHub</GitHubButtonText>
-                    </GitHubButton>
+                    </GitHubButton> */}
 
                     <DownloadButton href={WINDOWS_DOWNLOAD_URL}>
                         <WindowsIcon width={16} height={16} />

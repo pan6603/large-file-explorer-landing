@@ -31,21 +31,21 @@ export default function Footer() {
                         </FooterBrand>
                         <FooterLinks>
                             <FooterLink 
-                                href="https://github.com/pan6603/large-file-explorer-downloads/releases/tag/v1.0.0"
+                                href=""
                                 target="_blank"
                                 >
                                     v1.0.0 Release Notes
                             </FooterLink>
 
                             <FooterLink
-                                href="https://github.com/pan6603/large-file-explorer-downloads"
+                                href=""
                                 target="_blank"
                                 rel="noopener noreferrer"
                             >
                                 GitHub Repository
                             </FooterLink>
                             <FooterLink 
-                                href="https://github.com/pan6603/large-file-explorer-downloads/issues"
+                                href=""
                                 target="_blank"
                             >
                                     Bug Tracker

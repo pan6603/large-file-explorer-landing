@@ -101,7 +101,7 @@ export default function Header() {
                             </ResponsiveMenuEntry>
                         ))}
 
-                        <ResponsiveMenuEntry>
+                        {/* <ResponsiveMenuEntry>
                             <ResponsiveMenuItem
                                 href={GITHUB_RELEASE_URL}
                                 onClick={closeMenu}
@@ -110,7 +110,7 @@ export default function Header() {
                                 <GithubIcon />
                                 GitHub
                             </ResponsiveMenuItem>
-                        </ResponsiveMenuEntry>
+                        </ResponsiveMenuEntry> */}
 
                         <ResponsiveMenuEntry>
                             <ResponsiveDownloadItem

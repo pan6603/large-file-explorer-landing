@@ -10,7 +10,7 @@ import {
     FooterLink,
     FooterPlatform
 } from "@/components/layout/footer/Footer.styles"
-
+import LogoIcon from "@/components/layout/header/LogoIcon";
 
 
 export default function Footer() {
@@ -21,10 +21,11 @@ export default function Footer() {
                     <FooterContent>
                         <FooterBrand>
                             <FooterBrandTitleContainer>
-                                <FooterBrandTitle>Large File Explorer</FooterBrandTitle>
+                                <LogoIcon />
+                                <FooterBrandTitle>FileMap</FooterBrandTitle>
                             </FooterBrandTitleContainer>
                             <FooterBrandDescription>
-                                © 2024 Large File Explorer. <br className="tablet-br" />
+                                © 2026 FileMap. <br className="tablet-br" />
                                 Free & Open Source native Windows utility. Released under MIT License.
                             </FooterBrandDescription>
                         </FooterBrand>

@@ -49,7 +49,7 @@ export default function Header() {
             <HeaderInner>
                 <HeaderLogo>
                     <LogoIcon />
-                    <LogoIconText>Large File Explorer</LogoIconText>
+                    <LogoIconText>FileMap</LogoIconText>
                 </HeaderLogo>
 
                 <NavContainer aria-label="Primary navigation">

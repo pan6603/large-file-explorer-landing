@@ -1,8 +1,9 @@
+
 import styled from "styled-components";
 import Image from "next/image";
 
 
-export const WindowsIconContainer = styled.div`
+export const MicrosoftIconContainer = styled.div`
     width: fit-content;
     height: auto;
     display: flex;
@@ -26,23 +27,23 @@ export const WindowsIconContainer = styled.div`
 `;
 
 
-type WindowsIconProps = {
+type MicrosoftIconProps = {
     width?: number;
     height?: number;
 }
 
 
-export default function WindowsIcon({ width = 20, height = 20 }: WindowsIconProps) {
+export default function MicrosoftIcon({ width = 20, height = 20 }: MicrosoftIconProps) {
     return (
         <>
-            <WindowsIconContainer>
+            <MicrosoftIconContainer>
                 <Image 
-                    src="/icons/windows-icon.svg"
+                    src="/images/logo/logos_microsoft-icon.svg"
                     alt="Windows 아이콘"
                     width={width}
                     height={height}
                 />
-            </WindowsIconContainer>
+            </MicrosoftIconContainer>
         </>
     )
 }

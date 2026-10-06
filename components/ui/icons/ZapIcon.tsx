@@ -43,7 +43,7 @@ export default function ZapIcon() {
             <ZapIconContainer>
                 <Image 
                     src="/icons/zap-icon.svg"
-                    alt="zap-icon"
+                    alt="번개 아이콘"
                     width={18}
                     height={18}
                 />

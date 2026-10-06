@@ -28,7 +28,7 @@ export default function NativeSettingsIcon() {
             <NativeSettingsIconContainer>
                 <Image 
                     src="/icons/native-settings-icon.svg"
-                    alt="folder-breakdown-icon"
+                    alt="앱 설정 아이콘"
                     width={15}
                     height={12}
                 />

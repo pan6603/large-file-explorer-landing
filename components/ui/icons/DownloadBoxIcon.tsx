@@ -32,7 +32,7 @@ export default function DownloadBoxIcon() {
         <DownloadBoxIconContainer>
             <Image 
                 src="/icons/download-box-icon.svg"
-                alt="download-box-icon"
+                alt="다운로드 상자 아이콘"
                 width={23}
                 height={23}
             />

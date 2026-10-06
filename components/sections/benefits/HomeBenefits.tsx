@@ -21,37 +21,37 @@ import MousePointerClickIcon from "@/components/ui/icons/MousePointerClickIcon";
 const benefits = [
   {
     icon: <CheckCircleIcon />,
-    title: "Pure & Simple",
+    title: "깔끔하고 간결하게",
     description: (
       <>
-        No telemetry, background services, or unwanted distractions. Just a clean and focused
+        원격 분석이나 백그라운드 서비스 없이 핵심 기능에만 집중했습니다.
       </>
     ),
   },
   {
     icon: <ZapIcon />,
-    title: "Engineered Fast",
+    title: "빠른 처리 속도",
     description: (
       <>
-        Optimized scanning delivers fast results while keeping CPU and system resource usage low.
+        CPU와 시스템 자원 사용을 낮게 유지하면서 빠르게 스캔합니다.
       </>
     ),
   },
   {
     icon: <WindowsFocusedIcon />,
-    title: "Windows Focused",
+    title: "Windows에 최적화",
     description: (
       <>
-        Designed around standard Windows conventions, file systems, and familiar desktop workflows.
+        Windows 표준과 파일 시스템, 익숙한 데스크톱 흐름에 맞춰 설계했습니다.
       </>
     ),
   },
   {
     icon: <MousePointerClickIcon />,
-    title: "Easy to Use",
+    title: "누구나 쉽게",
     description: (
       <>
-        Choose a folder, start scanning, and rescan anytime with simple and intuitive controls.
+        폴더를 고르고 스캔을 시작하세요. 언제든 간단히 다시 스캔할 수 있습니다.
       </>
     ),
   },
@@ -75,16 +75,16 @@ export default function HomeBenefits() {
         <HomeBenefitsWrapper>
           <HomeBenefitsHeader>
             <HomeBenefitsEyebrow>
-              WHY LARGE FILE EXPLORER
+              FileMap을 선택하는 이유
             </HomeBenefitsEyebrow>
 
             <HomeBenefitsTitle>
-              Fast, native, and clutter-free
+              빠르고 가볍게, Windows답게
             </HomeBenefitsTitle>
 
             <HomeBenefitsDescription>
-              Built specifically for the Windows desktop experience with zero
-              baggage.
+              Windows 데스크톱 환경에 꼭 맞게, 불필요한 요소 없이
+              만들었습니다.
             </HomeBenefitsDescription>
           </HomeBenefitsHeader>
 

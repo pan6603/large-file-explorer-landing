@@ -43,7 +43,7 @@ export default function MousePointerClickIcon() {
             <MousePointerClickIconContainer>
                 <Image 
                     src="/icons/mouse-pointercick-icon.svg"
-                    alt="mouse-pointercick-icon"
+                    alt="마우스 클릭 아이콘"
                     width={18}
                     height={18}
                 />

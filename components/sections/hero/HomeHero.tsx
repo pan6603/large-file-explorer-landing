@@ -13,8 +13,6 @@ import {
     HomeHeroTitle,
     HomeHeroDescription,
     HomeHeroActions,
-    ReleaseMeta,
-    ReleaseMetaText,
     AppPreview
 } from "@/components/sections/hero/hero.styles";
 import { PrimaryButtonStyle } from "@/components/ui/buttons/button.styles";
@@ -30,39 +28,35 @@ export default function HomeHero() {
                     <HomeHeroContent>
                         <ReleaseBadge>
                             <StatusIndicator />
-                            <ReleaseBadgeText>v1.0.0 Released</ReleaseBadgeText>
+                            <ReleaseBadgeText>v1.0.0 출시</ReleaseBadgeText>
                             <Divider>•</Divider>
-                            <PlatformText>Native Windows Desktop App</PlatformText>
+                            <PlatformText>Windows 데스크톱 앱</PlatformText>
                         </ReleaseBadge>
 
                         <HomeHeroTitleWrapper>
                             <HomeHeroTitle>
-                                Find what's taking up your <br />
-                                storage.
+                                내 저장 공간을 차지하는 <br />
+                                파일을 한눈에
                             </HomeHeroTitle>
                         </HomeHeroTitleWrapper>
 
                         <HomeHeroDescription>
-                            FileMap is a native Windows desktop app that helps you quickly find large files, <br />
-                            duplicate files, and understand what's using your storage.
+                            대용량 파일과 중복 파일을 빠르게 찾고 저장 공간 사용 현황을 한눈에 확인할 수 있는 <br />
+                            Windows 파일 관리 도구입니다.
                         </HomeHeroDescription>
 
                         <HomeHeroActions>
                             <PrimaryButtonStyle href="">
                                 <WindowsIcon />
-                                Download for Windows
+                                MicroSoft Store 출시 예정
                                 <DownloadIcon />
                             </PrimaryButtonStyle>
                         </HomeHeroActions>
 
-                        <ReleaseMeta>
-                            <ReleaseMetaText>v1.0.0 · Windows 64-bit · Free & Open Source · Downloaded via GitHub Releases</ReleaseMetaText>
-                        </ReleaseMeta>
-
                         <AppPreview>
                             <Image
-                                src="/images/hero/app-preview.png"
-                                alt="app-preview"
+                                src="/images/hero/app-hero-preview.png"
+                                alt="FileMap 앱 화면 미리보기"
                                 width={1024}
                                 height={683}
                             />

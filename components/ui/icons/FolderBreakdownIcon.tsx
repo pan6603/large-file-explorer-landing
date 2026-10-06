@@ -28,7 +28,7 @@ export default function FolderBreakdownIcon() {
             <FolderBreakdownIconContainer>
                 <Image 
                     src="/icons/folder-breakdown-icon.svg"
-                    alt="folder-breakdown-icon"
+                    alt="폴더별 용량 아이콘"
                     width={15}
                     height={12}
                 />

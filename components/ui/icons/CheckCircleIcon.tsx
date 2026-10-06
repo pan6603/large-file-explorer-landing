@@ -43,7 +43,7 @@ export default function CheckCircleIcon() {
             <CheckCircleIconContainer>
                 <Image 
                     src="/icons/check-circle-icon.svg"
-                    alt="check-circle-icon"
+                    alt="체크 표시 아이콘"
                     width={18}
                     height={18}
                 />

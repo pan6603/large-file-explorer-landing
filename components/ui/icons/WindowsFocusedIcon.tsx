@@ -43,7 +43,7 @@ export default function WindowsFocusedIcon() {
             <WindowsFocusedIconContainer>
                 <Image 
                     src="/icons/windows-focused-icon.svg"
-                    alt="windows-focused-icon"
+                    alt="Windows 아이콘"
                     width={18}
                     height={18}
                 />

@@ -5,8 +5,6 @@ import { useState } from "react";
 import {
     DownloadButton,
     DownloadButtonText,
-    GitHubButton,
-    GitHubButtonText,
     HeaderActions,
     HeaderContainer,
     HeaderInner,
@@ -23,20 +21,17 @@ import {
 } from "@/components/layout/header/Header.styles";
 import LogoIcon from "@/components/layout/header/LogoIcon";
 import CloseIcon from "@/components/ui/icons/CloseIcon";
-import GithubIcon from "@/components/ui/icons/GithubIcon";
 import HamburgerIcon from "@/components/ui/icons/HamburgerIcon";
 import WindowsIcon from "@/components/ui/icons/WindowsIcon";
 
-const GITHUB_RELEASE_URL =
-    "";
 const WINDOWS_DOWNLOAD_URL =
     "";
 
 const NAV_ITEMS = [
-    { label: "Features", href: "#features" },
-    { label: "Screenshots", href: "#screenshots" },
-    { label: "Performance", href: "#performance" },
-    { label: "Documentation", href: "#documentation" },
+    { label: "주요 기능", href: "#features" },
+    { label: "미리보기", href: "#screenshots" },
+    { label: "성능", href: "#performance" },
+    { label: "사용 안내", href: "#documentation" },
 ] as const;
 
 export default function Header() {
@@ -52,7 +47,7 @@ export default function Header() {
                     <LogoIconText>FileMap</LogoIconText>
                 </HeaderLogo>
 
-                <NavContainer aria-label="Primary navigation">
+                <NavContainer aria-label="주요 탐색 메뉴">
                     {NAV_ITEMS.map(({ label, href }) => (
                         <NavItem key={href} href={href}>
                             {label}
@@ -61,14 +56,10 @@ export default function Header() {
                 </NavContainer>
 
                 <HeaderActions>
-                    {/* <GitHubButton href={GITHUB_RELEASE_URL}>
-                        <GithubIcon />
-                        <GitHubButtonText>GitHub</GitHubButtonText>
-                    </GitHubButton> */}
 
                     <DownloadButton href={WINDOWS_DOWNLOAD_URL}>
                         <WindowsIcon width={16} height={16} />
-                        <DownloadButtonText>Download for Windows</DownloadButtonText>
+                        <DownloadButtonText>MicroSoft Store 출시 예정</DownloadButtonText>
                     </DownloadButton>
 
                     <MenuButton
@@ -76,8 +67,8 @@ export default function Header() {
                         onClick={() => setIsMenuOpen((isOpen) => !isOpen)}
                         aria-label={
                             isMenuOpen
-                                ? "Close navigation menu"
-                                : "Open navigation menu"
+                                ? "탐색 메뉴 닫기"
+                                : "탐색 메뉴 열기"
                         }
                         aria-expanded={isMenuOpen}
                         aria-controls="tablet-navigation-menu"
@@ -90,7 +81,7 @@ export default function Header() {
             {isMenuOpen && (
                 <ResponsiveMenu
                     id="responsive-navigation-menu"
-                    aria-label="Responsive navigation"
+                    aria-label="반응형 탐색 메뉴"
                 >
                     <ResponsiveMenuList>
                         {NAV_ITEMS.map(({ label, href }) => (
@@ -101,24 +92,13 @@ export default function Header() {
                             </ResponsiveMenuEntry>
                         ))}
 
-                        {/* <ResponsiveMenuEntry>
-                            <ResponsiveMenuItem
-                                href={GITHUB_RELEASE_URL}
-                                onClick={closeMenu}
-                                $center
-                            >
-                                <GithubIcon />
-                                GitHub
-                            </ResponsiveMenuItem>
-                        </ResponsiveMenuEntry> */}
-
                         <ResponsiveMenuEntry>
                             <ResponsiveDownloadItem
                                 href={WINDOWS_DOWNLOAD_URL}
                                 onClick={closeMenu}
                             >
                                 <WindowsIcon width={16} height={16} />
-                                Download for Windows
+                                Windows용 다운로드
                             </ResponsiveDownloadItem>
                         </ResponsiveMenuEntry>
                     </ResponsiveMenuList>

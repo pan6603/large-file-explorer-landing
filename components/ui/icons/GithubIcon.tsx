@@ -30,7 +30,7 @@ export default function GithubIcon({ width = 16, height = 16 }: GithubIconProps)
             <GithubIconContainer>
                 <Image 
                     src="/icons/github-icon.svg"
-                    alt="github-icon"
+                    alt="GitHub 아이콘"
                     width={width}
                     height={height}
                 />

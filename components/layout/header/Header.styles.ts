@@ -125,7 +125,7 @@ export const NavItem = styled(Link)`
 `;
 
 export const HeaderActions = styled.div`
-    max-width: 189px;
+    max-width: 230px;
     width: 100%;
     height: 32px;
     display: flex;
@@ -181,10 +181,10 @@ export const GitHubButtonText = styled.span`
 `;
 
 export const DownloadButton = styled(Link)`
-    max-width: 190px;
+    max-width: 210px;
     width: 100%;
     height: 32px;
-    padding: 8px 16px;
+    padding: 8px 14px;
     background-color: #0066cc;
     border-radius: 8px;
     display: flex;

@@ -28,7 +28,7 @@ export default function FileTypesDistributionIcon() {
             <FileTypesDistributionIconContainer>
                 <Image 
                     src="/icons/file-types-distribution-icon.svg"
-                    alt="folder-breakdown-icon"
+                    alt="파일 형식별 분포 아이콘"
                     width={15}
                     height={12}
                 />

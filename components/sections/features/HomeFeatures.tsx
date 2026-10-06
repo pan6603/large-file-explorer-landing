@@ -15,45 +15,45 @@ import FeatureCard from "@/components/ui/cards/FeatureCard";
 const FEATURES = [
     {
         imageSrc: "/icons/storage-overview-icon.svg",
-        title: "Storage Overview",
-        subtitle: "View Storage Usage",
+        title: "저장 공간 현황",
+        subtitle: "저장 공간 사용량 확인",
         description:
-            "Visualize total folder size, item counts, and hierarchical storage distribution at a single glance with zero delay.",
+            "폴더 전체 크기와 항목 수, 계층별 용량 분포를 한눈에 확인하세요.",
     },
     {
         imageSrc: "/icons/large-files-finder-icon.svg",
-        title: "Large Files Finder",
-        subtitle: "Quickly Find Large Files",
+        title: "대용량 파일 찾기",
+        subtitle: "대용량 파일 빠르게 찾기",
         description:
-            "Spot massive disk-hugging files instantly with customizable threshold filters ranging from 100 MB up to multi-gigabytes.",
+            "100MB부터 수 GB까지 기준을 직접 설정해 용량을 많이 차지하는 파일을 빠르게 찾아보세요.",
     },
     {
         imageSrc: "/icons/duplicate-files-icon.svg",
-        title: "Duplicate Files Detection",
-        subtitle: "Detect Duplicate Files Using SHA-256",
+        title: "중복 파일 찾기",
+        subtitle: "SHA-256으로 중복 파일 확인",
         description:
-            "Accurately detect identical files using rigorous SHA-256 cryptographic checksum analysis, preventing mistaken deletions.",
+            "SHA-256 체크섬을 비교해 내용이 같은 파일을 정확하게 찾고 잘못된 삭제를 방지합니다.",
     },
     {
         imageSrc: "/icons/advanced-filters-icon.svg",
-        title: "Advanced Filters",
-        subtitle: "Filter by Size, Extension, and Modified Date",
+        title: "고급 필터",
+        subtitle: "크기·확장자·수정일로 필터링",
         description:
-            "Slice and isolate data effortlessly by size brackets, extension groups (.zip, .mp4, .iso), or date modified ranges.",
+            "파일 크기, 확장자(.zip, .mp4, .iso), 수정 날짜 범위를 지정해 원하는 파일만 손쉽게 골라보세요.",
     },
     {
         imageSrc: "/icons/folder-analysis-icon.svg",
-        title: "Folder Analysis",
-        subtitle: "Analyze Storage Usage by Folder",
+        title: "폴더별 분석",
+        subtitle: "폴더별 저장 공간 분석",
         description:
-            "Deep-dive into nested directories to isolate exact storage hogging branches without wading through Windows properties panels.",
+            "하위 폴더까지 분석해 용량을 많이 차지하는 위치를 빠르게 찾아보세요.",
     },
     {
         imageSrc: "/icons/fast-file-search-icon.svg",
-        title: "Fast File Search",
-        subtitle: "Quickly Search by File Name",
+        title: "빠른 파일 검색",
+        subtitle: "파일 이름으로 빠르게 검색",
         description:
-            "Instant real-time keyword querying across scanned directories, enabling rapid pinpointing of forgotten archives.",
+            "검색한 폴더에서 파일 이름을 실시간으로 조회해 오래된 보관 파일도 빠르게 찾을 수 있습니다.",
     },
 ] as const;
 
@@ -74,13 +74,13 @@ export default function HomeFeatures() {
             <HomeHeroContainer>
                 <HomeFeaturesContent>
                     <HomeFeaturesHeader>
-                        <HomeFeaturesEyebrow>KEY FEATURES</HomeFeaturesEyebrow>
+                        <HomeFeaturesEyebrow>주요 기능</HomeFeaturesEyebrow>
 
-                        <HomeFeaturesTitle>Engineered for speed and clarity</HomeFeaturesTitle>
+                        <HomeFeaturesTitle>빠르고 명확한 저장 공간 분석</HomeFeaturesTitle>
 
                         <HomeFeaturesDescription>
-                            Everything you need to regain disk space without
-                            unnecessary clutter or sluggish background tasks.
+                            불필요한 기능이나 무거운 백그라운드 작업 없이,
+                            저장 공간을 되찾는 데 필요한 기능만 담았습니다.
                         </HomeFeaturesDescription>
                     </HomeFeaturesHeader>
 

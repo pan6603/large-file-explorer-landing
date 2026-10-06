@@ -48,7 +48,7 @@ export default function AppPreviewCard({ icon, title, description, imageSrc }: A
                 <AppPreviewCardDescription>{description}</AppPreviewCardDescription>
                 <Image 
                     src={imageSrc}
-                    alt="app-preview-card"
+                    alt="앱 기능 미리보기"
                     width={347}
                     height={132}
                 />

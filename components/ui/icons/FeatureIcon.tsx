@@ -56,7 +56,7 @@ export default function FeatureIcon({
             <FeatureIconContainer>
                 <Image 
                     src={imageSrc}
-                    alt="download-icon"
+                    alt="기능 아이콘"
                     width={19}
                     height={19}
                 />

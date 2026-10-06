@@ -268,3 +268,60 @@ export const SourceRepositoryText = styled.span`
     color: #131b2e;
 `
 
+
+export const MicrosoftStoreBadge = styled(Link)`
+    max-width: 272px;
+    width: 100%;
+    height: 56px;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding: 16px 32px;
+    border: 1px solid #0066cc;
+    border-radius: 8px;
+    background: #FAF8FF;
+    color: #0066cc;
+
+    @media (min-width: 768px) and (max-width: 1024px) {
+        max-width: 248px;
+        height: 52px;
+        padding: 14px 28px;
+        gap: 10px;
+    }
+
+    @media (max-width: 767px) {
+        max-width: 320px;
+        width: 100%;
+        height: 48px;
+        padding: 0 20px;
+        gap: 10px;
+        justify-content: center;
+        border-radius: 8px;
+    }
+`
+
+const MicrosoftStoreIcon = styled.img``;
+
+
+export const MicrosoftStoreText = styled.span`
+    font-family: "Inter", sans-serif;
+    font-size: 15px;
+    font-weight: 600;
+    line-height: 24px;
+    letter-spacing: -0.16px;
+    text-align: center;
+    color: #0066cc;
+
+    @media (min-width: 768px) and (max-width: 1024px) {
+        font-size: 14px;
+        line-height: 22px;
+        letter-spacing: -0.14px;
+    }
+
+    @media (max-width: 767px) {
+        font-size: 14px;
+        line-height: 20px;
+        letter-spacing: -0.14px;
+        white-space: nowrap;
+    }
+`

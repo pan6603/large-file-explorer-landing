@@ -8,12 +8,14 @@ import {
     HomeCTAHeading,
     HomeCTADescription,
     HomeCTAButtons,
-    HomeCTAMeta,
-    HomeCTADownloadButton,
-    HomeCTADownloadButtonText,
+    MicrosoftStoreBadge,
+    MicrosoftStoreText
+    // HomeCTADownloadButton,
+    // HomeCTADownloadButtonText,
 } from "@/components/sections/cta/cta.styles"
 import DownloadBoxIcon from "@/components/ui/icons/DownloadBoxIcon"
-import WindowsIcon from "@/components/ui/icons/WindowsIcon"
+// import WindowsIcon from "@/components/ui/icons/WindowsIcon"
+import MicrosoftIcon from "@/components/ui/icons/MicrosoftIcon"
 
 const handleCtaClick = (
     event: React.MouseEvent<HTMLAnchorElement>
@@ -34,18 +36,22 @@ export default function HomeCta() {
                     <HomeCtaWrapper>
                         <HomeCtaContent>
                             <DownloadBoxIcon />
-                            <HomeCTAHeading>Take control of your storage.</HomeCTAHeading>
+                            <HomeCTAHeading>저장 공간을 한눈에 관리하세요.</HomeCTAHeading>
                             <HomeCTADescription>
-                                Find large and duplicate files effortlessly. A fast, free, and open-source desktop utility.
+                                대용량 파일과 중복 파일을 손쉽게 찾는 빠르고 무료인 오픈소스 Windows 파일 관리 도구입니다.
                             </HomeCTADescription>
                             <HomeCTAButtons>
-                                <HomeCTADownloadButton href="">
+                                {/* <HomeCTADownloadButton href="">
                                     <WindowsIcon />
-                                    <HomeCTADownloadButtonText>Download for Windows</HomeCTADownloadButtonText>
-                                </HomeCTADownloadButton>
+                                    <HomeCTADownloadButtonText>Windows용 다운로드</HomeCTADownloadButtonText>
+                                </HomeCTADownloadButton> */}
+                                <MicrosoftStoreBadge href="">
+                                    <MicrosoftIcon />
+                                    <MicrosoftStoreText>MicroSoft Store 출시 예정</MicrosoftStoreText>
+                                </MicrosoftStoreBadge>
 
                             </HomeCTAButtons>
-                            <HomeCTAMeta>v1.0.0 · Windows 64-bit · Downloaded via GitHub Releases · 100% Free & Open Source</HomeCTAMeta>
+                          
                         </HomeCtaContent>
                     </HomeCtaWrapper>
                 </HomeCtaContainer>

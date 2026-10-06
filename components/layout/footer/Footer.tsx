@@ -8,7 +8,6 @@ import {
     FooterBrandDescription,
     FooterLinks,
     FooterLink,
-    FooterPlatform
 } from "@/components/layout/footer/Footer.styles"
 import LogoIcon from "@/components/layout/header/LogoIcon";
 
@@ -25,8 +24,7 @@ export default function Footer() {
                                 <FooterBrandTitle>FileMap</FooterBrandTitle>
                             </FooterBrandTitleContainer>
                             <FooterBrandDescription>
-                                © 2026 FileMap. <br className="tablet-br" />
-                                Free & Open Source native Windows utility. Released under MIT License.
+                                © 2026 FileMap. All rights reserved.
                             </FooterBrandDescription>
                         </FooterBrand>
                         <FooterLinks>
@@ -34,7 +32,7 @@ export default function Footer() {
                                 href=""
                                 target="_blank"
                                 >
-                                    v1.0.0 Release Notes
+                                    개인정보처리방침
                             </FooterLink>
 
                             <FooterLink
@@ -42,15 +40,15 @@ export default function Footer() {
                                 target="_blank"
                                 rel="noopener noreferrer"
                             >
-                                GitHub Repository
+                                이용약관
                             </FooterLink>
                             <FooterLink 
                                 href=""
                                 target="_blank"
                             >
-                                    Bug Tracker
+                                    고객지원
                             </FooterLink>
-                            <FooterPlatform>Windows 10 / 11 (64-bit)</FooterPlatform>
+                        
                         </FooterLinks>
                     </FooterContent>
                 </FooterWrapper>

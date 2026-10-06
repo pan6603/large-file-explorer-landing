@@ -12,7 +12,7 @@ export default function LogoIcon() {
            <LogoIconContainer>
                 <Image
                     src="/images/logo/file-map-logo.svg"
-                    alt="logo"
+                    alt="FileMap 로고"
                     width={48}
                     height={32}
                 />

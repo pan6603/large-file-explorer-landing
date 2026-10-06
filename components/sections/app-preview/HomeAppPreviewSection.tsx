@@ -39,27 +39,27 @@ type PreviewTabItem = {
 
 const previewTabs: readonly PreviewTabItem[] = [
   {
-    label: "Storage Overview",
+    label: "저장 공간 현황",
     value: "storage",
     image: {
-      src: "/images/screenshots/storage-overview-preview.png",
-      alt: "Large File Explorer storage overview showing folder sizes",
+      src: "/images/screenshots/app-storage-overview-preview.png",
+      alt: "FileMap 저장 공간 현황과 폴더별 크기",
     },
   },
   {
-    label: "Large Files",
+    label: "대용량 파일",
     value: "large",
     image: {
-      src: "/images/hero/app-preview.png",
-      alt: "Large File Explorer list of large files",
+      src: "/images/hero/app-hero-preview.png",
+      alt: "FileMap 대용량 파일 목록",
     },
   },
   {
-    label: "Duplicate Files",
+    label: "중복 파일",
     value: "duplicate",
     image: {
-      src: "/images/screenshots/duplicate-files-preview.png",
-      alt: "Large File Explorer duplicate files grouped for comparison",
+      src: "/images/screenshots/app-duplicate-files-preview.png",
+      alt: "FileMap 중복 파일 비교 목록",
     },
   },
 ];
@@ -69,31 +69,31 @@ const previewPanelId = "app-preview-panel";
 const previewCards = [
   {
     icon: <FolderBreakdownIcon />,
-    title: "Folder Breakdown",
-    imageSrc: "/images/screenshots/folders-preview.png",
+    title: "폴더별 용량",
+    imageSrc: "/images/screenshots/app-folders-preview.png",
     description: (
       <>
-        See which folders use the most space.
+        어떤 폴더가 가장 많은 공간을 사용하는지 확인하세요.
       </>
     ),
   },
   {
     icon: <FileTypesDistributionIcon />,
-    title: "File Types Distribution",
-    imageSrc: "/images/screenshots/file-types-preview.png",
+    title: "파일 형식별 분포",
+    imageSrc: "/images/screenshots/app-file-types-preview.png",
     description: (
       <>
-        See which file types use the most space.
+        어떤 파일 형식이 가장 많은 공간을 사용하는지 확인하세요.
       </>
     ),
   },
   {
     icon: <NativeSettingsIcon />,
-    title: "Native Settings",
-    imageSrc: "/images/screenshots/settings-preview.png",
+    title: "앱 설정",
+    imageSrc: "/images/screenshots/app-settings-preview.png",
     description: (
       <>
-        Customize the app to fit your workflow.
+        작업 방식에 맞게 앱을 설정하세요.
       </>
     ),
   },
@@ -153,20 +153,20 @@ export default function HomeAppPreviewSection() {
           <HomeAppPreviewHeader>
             <HomeAppPreviewIntro>
               <HomeAppPreviewEyebrow>
-                INSIDE LARGE FILE EXPLORER
+                FileMap 미리보기
               </HomeAppPreviewEyebrow>
 
               <HomeAppPreviewTitle>
-                Explore the clean, intuitive interface
+                깔끔하고 직관적인 화면
               </HomeAppPreviewTitle>
 
               <HomeAppPreviewDescription>
-                Designed with Microsoft Fluent design paradigms for native
-                Windows power users.
+                Windows 사용자에게 익숙한 Microsoft Fluent Design을 바탕으로
+                설계했습니다.
               </HomeAppPreviewDescription>
             </HomeAppPreviewIntro>
 
-            <HomeAppPreviewTabs role="tablist" aria-label="App preview screenshots">
+            <HomeAppPreviewTabs role="tablist" aria-label="앱 화면 미리보기">
               {previewTabs.map((tab) => (
                 <PreviewTab
                   key={tab.value}

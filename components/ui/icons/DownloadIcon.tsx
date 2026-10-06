@@ -21,7 +21,7 @@ export default function DownloadIcon({ width = 13, height = 13 }: DownloadIconPr
             <DownloadIconContainer>
                 <Image 
                     src="/icons/download-icon.svg"
-                    alt="download-icon"
+                    alt="다운로드 아이콘"
                     width={width}
                     height={height}
                 />
